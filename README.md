@@ -1,6 +1,21 @@
 # Template Bhai
 
-Free HTML/CSS/Tailwind Templates
+Description: TBD
+
+## Important
+This project is a monorepo created using [Turborepo](https://turborepo.org/).
+Monorepo is a collection of different projects that are built using the same codebase.
+This allows us to have reusable components and packages that can be used by all projects.
+
+If you are working on a template that doesn't have any dependencies in the monorepo, you can simply
+treat it as a normal project. CD into the project and run `yarn dev` as usual.
+
+## Getting Started
+
+- To install dependencies run `yarn install`
+- To develop all projects run `yarn dev`
+- To work on a specific app or package, cd to the respective directory and run `yarn dev`
+- To build all projects run `yarn build`
 
 ## What's inside?
 
@@ -24,7 +39,12 @@ yarn build
 
 ### Develop
 
-To develop all apps and packages, run the following command:
+To work on a specific app or package, cd to the respective directory and run:
+
+```
+yarn dev
+```
+To develop all apps and packages, run the following command in the root directory:
 
 ```
 yarn dev
