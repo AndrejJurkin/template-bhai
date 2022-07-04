@@ -29,27 +29,6 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 - `template`: a stub [Tailwind CSS](https://tailwindcss.com/) & [Vite](https://vitejs.dev/) template
 
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-yarn build
-```
-
-### Develop
-
-To work on a specific app or package, cd to the respective directory and run:
-
-```
-yarn dev
-```
-To develop all apps and packages, run the following command in the root directory:
-
-```
-yarn dev
-```
-
 ### Remote Caching
 
 Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
