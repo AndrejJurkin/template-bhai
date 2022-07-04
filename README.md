@@ -17,6 +17,8 @@ treat it as a normal project. CD into the project and run `yarn dev` as usual.
 - To work on a specific app or package, cd to the respective directory and run `yarn dev`
 - To build all projects run `yarn build`
 
+Note: If you do not have a `yarn` installed run => `npx yarn` to run it withut global installing
+
 ## What's inside?
 
 This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
