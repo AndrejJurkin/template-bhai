@@ -19,7 +19,7 @@ treat it as a normal project. CD into the project and run `yarn dev` as usual.
 
 ## What's inside?
 
-This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
+This turborepo uses [Yarn](https://yarnpkg.com/) as a package manager. It includes the following packages/apps:
 
 ### Apps and Packages
 
