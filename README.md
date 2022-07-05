@@ -17,6 +17,45 @@ treat it as a normal project. CD into the project and run `yarn dev` as usual.
 - To work on a specific app or package, cd to the respective directory and run `yarn dev`
 - To build all projects run `yarn build`
 
+## Creating a New Static Template
+
+If you want to start working on your own template, you can simply create a new directory in the static folder.
+
+### Example Using Vite & TailwindCSS
+1. run `cd static`
+2. run `yarn create vite`
+3. Name your template
+4. Select `vanilla` as the framework
+5. run `cd {your_project_name}`
+6. create postcss.config.js file
+```js
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+
+```
+7. create tailwind.config.js file
+```js
+module.exports = {
+  content: ["./**/*.{html,js,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+```
+8. Add TailwindCSS derictive files to style.css
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+9. We're done! Run `yarn install` in the root project directory, then cd into your project and run `yarn dev`
+
 ## What's inside?
 
 This turborepo uses [Yarn](https://yarnpkg.com/) as a package manager. It includes the following packages/apps:
@@ -35,7 +74,7 @@ Turborepo can use a technique known as [Remote Caching](https://turborepo.org/do
 
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
-```
+```console
 npx turbo login
 ```
 
@@ -43,7 +82,7 @@ This will authenticate the Turborepo CLI with your [Vercel account](https://verc
 
 Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
 
-```
+```console
 npx turbo link
 ```
 
