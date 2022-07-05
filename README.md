@@ -17,6 +17,45 @@ treat it as a normal project. CD into the project and run `yarn dev` as usual.
 - To work on a specific app or package, cd to the respective directory and run `yarn dev`
 - To build all projects run `yarn build`
 
+## Creating a New Static Template
+
+If you want to start working on your own template, you can simply create a new directory in the static folder.
+
+### Example Using Vite & TailwindCSS
+1. run `cd static`
+2. run `yarn create vite`
+3. Name your template
+4. Select `vanilla` as the framework
+5. run `cd {your_project_name}`
+6. create postcss.config.js file
+```
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+
+```
+7. create tailwind.config.js file
+```
+module.exports = {
+  content: ["./**/*.{html,js,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+```
+8. Add TailwindCSS derictive files to style.css
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+9. We're done! Run `yarn dev` to start working on your template.
+
 ## What's inside?
 
 This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
