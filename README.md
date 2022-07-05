@@ -54,7 +54,7 @@ module.exports = {
 @tailwind components;
 @tailwind utilities;
 ```
-9. We're done! Run `yarn dev` to start working on your template.
+9. We're done! Run `yarn install` in the root project directory, then cd into your project and run `yarn dev`
 
 ## What's inside?
 
