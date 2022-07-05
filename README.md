@@ -49,7 +49,7 @@ module.exports = {
 
 ```
 8. Add TailwindCSS derictive files to style.css
-```js
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
