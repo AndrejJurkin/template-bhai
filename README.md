@@ -28,7 +28,7 @@ If you want to start working on your own template, you can simply create a new d
 4. Select `vanilla` as the framework
 5. run `cd {your_project_name}`
 6. create postcss.config.js file
-```
+```js
 module.exports = {
   plugins: {
     tailwindcss: {},
@@ -38,7 +38,7 @@ module.exports = {
 
 ```
 7. create tailwind.config.js file
-```
+```js
 module.exports = {
   content: ["./**/*.{html,js,ts,tsx}"],
   theme: {
@@ -49,7 +49,7 @@ module.exports = {
 
 ```
 8. Add TailwindCSS derictive files to style.css
-```
+```js
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -74,7 +74,7 @@ Turborepo can use a technique known as [Remote Caching](https://turborepo.org/do
 
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
-```
+```console
 npx turbo login
 ```
 
@@ -82,7 +82,7 @@ This will authenticate the Turborepo CLI with your [Vercel account](https://verc
 
 Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
 
-```
+```console
 npx turbo link
 ```
 
