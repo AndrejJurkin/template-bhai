@@ -3,12 +3,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#2177F2'
+        primary: "#2177F2",
       },
       fontFamily: {
-        'nunito': ['Nunito', 'sans-serif'],
-        'poppins': ['Poppins', 'sans-serif']
-      }
+        nunito: ["Nunito", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
