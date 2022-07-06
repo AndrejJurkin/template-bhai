@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Poppins:wght@400;500&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <header class="px-6 py-4 flex justify-between bg-[#F6F7F9]">
-    <a class="font-extrabold font-nunito text-[#1A0C06]" href="/">Agency</a>
-    <button>
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-        stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-    <nav class="hidden">
-      <a href="#">Home</a>
-      <a href="#">Our Services</a>
-      <a href="#">Projects</a>
-      <a href="#">Blog</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-  <main class="">
-    <section class="py-6 px-6 bg-[#F6F7F9]">
-      <h1 class="font-nunito font-extrabold text-center text-xl">We Build Digital Product For Your Success</h1>
-      <div class="flex justify-center text-sm text-white mt-3 space-x-2">
-        <a class="px-4 py-2 bg-primary rounded-sm" href="#">Get Started</a>
-        <a class="px-4 py-2 bg-black rounded-sm" href="#">Watch Demo</a>
-      </div>
-      <img class="mt-8 inline-block" src="./assets/banner-image.svg" alt="Man and woman sitting in front of each other">
-    </section>
-  </main>
-  <div id="app"></div>
-  <script type="module" src="/main.js"></script>
-</body>
-
+  <body>
+    <header class="px-6 py-4 flex justify-between bg-[#F6F7F9]">
+      <a class="font-extrabold font-nunito text-[#1A0C06]" href="/">Agency</a>
+      <button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+      <nav class="hidden">
+        <a href="#">Home</a>
+        <a href="#">Our Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main class="">
+      <section class="py-6 px-6 bg-[#F6F7F9]">
+        <h1 class="font-nunito font-extrabold text-center text-xl">
+          We Build Digital Product For Your Success
+        </h1>
+        <div class="flex justify-center text-sm text-white mt-3 space-x-2">
+          <a class="px-4 py-2 bg-primary rounded-sm" href="#">Get Started</a>
+          <a class="px-4 py-2 bg-black rounded-sm" href="#">Watch Demo</a>
+        </div>
+        <img
+          class="mt-8 inline-block"
+          src="./assets/banner-image.svg"
+          alt="Man and woman sitting in front of each other"
+        />
+      </section>
+    </main>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
