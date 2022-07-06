@@ -13,7 +13,7 @@
     />
   </head>
 
-  <body>
+  <body class="font-poppins">
     <header class="px-6 py-4 flex justify-between bg-[#F6F7F9]">
       <a class="font-extrabold font-nunito text-[#1A0C06]" href="/">Agency</a>
       <button>
@@ -56,7 +56,89 @@
           alt="Man and woman sitting in front of each other"
         />
       </section>
+
+      <section
+        class="flex px-6 py-12 space-x-10 flex-wrap justify-evenly gap-y-5"
+      >
+        <img class="h-4" src="./assets/logo-behance.svg" alt="behance logo" />
+        <img class="h-5" src="./assets/logo-cocacola.svg" alt="cocacola logo" />
+        <img class="h-5" src="./assets/logo-google.svg" alt="google logo" />
+        <img class="h-5" src="./assets/logo-dribbble.svg" alt="dribbble logo" />
+        <img class="h-5" src="./assets/logo-amazon.svg" alt="amazon logo" />
+      </section>
+
+      <section class="px-6 mt-4 text-center">
+        <h2 class="font-extrabold font-nunito text-xl">What We Provide</h2>
+        <div class="font-poppins text-xs mt-3">
+          <p class="text-[#5E646B]">
+            Praesent placerated egestas egestas cras rhone magna rutrum tellus
+            laoreet
+          </p>
+          <a
+            href="#"
+            class="bg-[#F5F9FF] px-4 py-2 mt-4 inline-block text-[#241008]"
+          >
+            See More
+          </a>
+        </div>
+
+        <div class="mt-6 px-4 flex flex-col gap-y-6">
+          <article
+            class="rounded bg-[#FFEABF] flex flex-col items-center p-10 text-center"
+          >
+            <img
+              class="w-32 -mb-12"
+              src="./assets/app-design-icon.svg"
+              alt="app design icon"
+            />
+            <h3 class="text-lg font-nunito text-[#241008]">App Design</h3>
+            <p class="text-[#534F48] text-sm mt-3">
+              Praesent placerated egestas egestas cras rhone magna rutrum tellus
+              laoreet
+            </p>
+            <a class="text-[#241008] mt-2 underline text-sm" href="#"
+              >Learn More</a
+            >
+          </article>
+          <article
+            class="rounded bg-[#ECFFDD] flex flex-col items-center p-10 text-center"
+          >
+            <img
+              class="w-32 -mb-12"
+              src="./assets/web-design-icon.svg"
+              alt="app design icon"
+            />
+            <h3 class="text-lg font-nunito text-[#241008]">Web Design</h3>
+            <p class="text-[#5B6356] text-sm mt-3">
+              Praesent placerated egestas egestas cras rhone magna rutrum tellus
+              laoreet
+            </p>
+            <a class="text-[#241008] mt-2 underline text-sm" href="#"
+              >Learn More</a
+            >
+          </article>
+          <article
+            class="rounded bg-[#B5D2FF] flex flex-col items-center p-10 text-center"
+          >
+            <img
+              class="w-32 -mb-12"
+              src="./assets/web-development-icon.svg"
+              alt="app design icon"
+            />
+            <h3 class="text-lg font-nunito text-[#241008]">Web Development</h3>
+            <p class="text-[#54585F] text-sm mt-3">
+              Praesent placerated egestas egestas cras rhone magna rutrum tellus
+              laoreet
+            </p>
+            <a class="text-[#241008] mt-2 underline text-sm" href="#"
+              >Learn More</a
+            >
+          </article>
+        </div>
+      </section>
     </main>
+    <!-- for space at bottom -->
+    <div class="h-40"></div>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>
