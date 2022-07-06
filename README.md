@@ -3,6 +3,7 @@
 Description: TBD
 
 ## Important
+
 This project is a monorepo created using [Turborepo](https://turborepo.org/).
 Monorepo is a collection of different projects that are built using the same codebase.
 This allows us to have reusable components and packages that can be used by all projects.
@@ -22,12 +23,14 @@ treat it as a normal project. CD into the project and run `yarn dev` as usual.
 If you want to start working on your own template, you can simply create a new directory in the static folder.
 
 ### Example Using Vite & TailwindCSS
+
 1. run `cd static`
 2. run `yarn create vite`
 3. Name your template
 4. Select `vanilla` as the framework
 5. run `cd {your_project_name}`
 6. create postcss.config.js file
+
 ```js
 module.exports = {
   plugins: {
@@ -35,25 +38,28 @@ module.exports = {
     autoprefixer: {},
   },
 };
-
 ```
+
 7. create tailwind.config.js file
+
 ```js
 module.exports = {
-  content: ["./**/*.{html,js,ts,tsx}"],
+  content: ['./**/*.{html,js,ts,tsx}'],
   theme: {
     extend: {},
   },
   plugins: [],
 };
-
 ```
+
 8. Add TailwindCSS derictive files to style.css
+
 ```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
+
 9. We're done! Run `yarn install` in the root project directory, then cd into your project and run `yarn dev`
 
 ## What's inside?
@@ -85,4 +91,3 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 ```console
 npx turbo link
 ```
-
