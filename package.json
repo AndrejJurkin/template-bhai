@@ -18,6 +18,7 @@
     "eslint-config-custom": "*",
     "postcss": "^8.4.14",
     "prettier": "latest",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "tailwindcss": "^3.1.4",
     "turbo": "latest"
   },
