@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+      integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Vite App</title>
+  </head>
+
+  <body class="bg-dark">
+    <!-- ==== Start Header ==== -->
+    <header class="sticky-top bg-[gray]/30">
+      <nav
+        class="container flex flex-wrap justify-between py-2 lg:items-center"
+      >
+        <a href="/" class="max-w-[35%]">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <button
+          class="relative h-[35px] w-[40px] text-3xl text-white lg:hidden"
+          id="menu"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <ul
+          id="nav"
+          class="my-4 hidden w-full text-xl lg:flex lg:max-w-[50%] lg:items-center lg:justify-end lg:gap-8"
+        >
+          <li
+            class="relative mb-4 w-fit text-white before:absolute before:-bottom-[3px] before:left-1/2 before:h-[2px] before:w-0 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-xl before:bg-white before:duration-500 before:content-[''] hover:before:w-full lg:mb-0"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="relative mb-4 w-fit text-white before:absolute before:-bottom-[3px] before:left-1/2 before:h-[2px] before:w-0 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-xl before:bg-white before:duration-500 before:content-[''] hover:before:w-full lg:mb-0"
+          >
+            <a href="#work">Work</a>
+          </li>
+          <li
+            class="relative w-fit text-white before:absolute before:-bottom-[3px] before:left-1/2 before:h-[2px] before:w-0 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-xl before:bg-white before:duration-500 before:content-[''] hover:before:w-full"
+          >
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ==== End Header ==== -->
+
+    <!-- ==== Start Hero ===  -->
+    <div id="hero">
+      <div
+        class="container mt-4 flex flex-col flex-col-reverse justify-evenly lg:mt-0 lg:h-[min(90vh,_800px)] lg:flex-row lg:items-center lg:justify-between"
+      >
+        <!-- section  -->
+        <section class="h-fit text-center lg:max-w-[40%] lg:text-left">
+          <h1 class="text-light-white mb-5 text-4xl">
+            Hi, I am Your Name A Product Designer based in City.
+          </h1>
+          <p class="text-light-gray mb-12 text-lg">
+            I help businesses and companies reach their goals by designing
+            user-centric digital products & interactive experiences.
+          </p>
+          <a
+            href="mailto:your@email.com"
+            class="bg-btn mx-auto block w-fit px-8 py-4 text-white duration-300 hover:shadow-xl hover:shadow-white/20 lg:mx-0"
+          >
+            <i class="bi bi-envelope"></i>
+            your@email.com
+          </a>
+        </section>
+
+        <!-- image  -->
+        <div class="lg:grid lg:min-w-[50%] lg:place-items-center">
+          <img
+            src="https://www.asmm.fr/wp-content/uploads/2020/09/cesar-rincon-XHVpWcr5grQ-unsplash-300x300.jpg"
+            class="w-100 mx-auto block aspect-square h-auto rounded-full"
+            alt="it's me"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- ==== End Hero ===  -->
+
+    <!-- ==== Start Featured Work ====  -->
+    <section class="my-12" id="work">
+      <div class="container mb-12">
+        <h1
+          class="text-light-white before:bg-light-white relative mb-6 pl-3 text-lg font-semibold before:absolute before:left-0 before:h-full before:w-[3px] before:rounded-[5px] before:content-[''] after:absolute after:-left-[3.8px] after:bottom-0 after:h-[10px] after:w-[10px] after:-rotate-45 after:border-[3px] after:border-t-0 after:border-r-0 after:content-['']"
+        >
+          Featured Work
+        </h1>
+        <!-- gallery -->
+        <div class="grid md:grid-cols-2">
+          <div class="group relative m-2 max-h-[600px]">
+            <img
+              src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt="description"
+              class="h-full w-full object-cover"
+            />
+            <div
+              class="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden bg-[black]/20 opacity-0 duration-500 group-hover:w-full group-hover:opacity-100"
+            >
+              <p class="text-center text-lg font-semibold text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="group relative m-2 max-h-[600px]">
+            <img
+              src="https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHByb2R1Y3QlMjBkZXNpbmdlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt="description"
+              class="h-full w-full object-cover"
+            />
+            <div
+              class="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden bg-[black]/20 opacity-0 duration-500 group-hover:w-full group-hover:opacity-100"
+            >
+              <p class="text-center text-lg font-semibold text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="group relative m-2 max-h-[600px]">
+            <img
+              src="https://images.unsplash.com/photo-1524638067-feba7e8ed70f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZHVjdCUyMGRlc2luZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="description"
+              class="h-full w-full object-cover"
+            />
+            <div
+              class="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden bg-[black]/20 opacity-0 duration-500 group-hover:w-full group-hover:opacity-100"
+            >
+              <p class="text-center text-lg font-semibold text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="group relative m-2 max-h-[600px]">
+            <img
+              src="https://images.unsplash.com/photo-1549049950-48d5887197a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1528&q=80"
+              alt="description"
+              class="h-full w-full object-cover"
+            />
+            <div
+              class="absolute left-1/2 top-1/2 flex h-full w-full -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-hidden bg-[black]/20 opacity-0 duration-500 group-hover:w-full group-hover:opacity-100"
+            >
+              <p class="text-center text-lg font-semibold text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== End Featured Work ====  -->
+
+    <!-- ==== Start Visual Explorations ====  -->
+    <section class="my-16">
+      <div class="container">
+        <h1 class="text-light-white mb-8 text-center text-3xl">
+          Visual Explorations
+        </h1>
+        <!-- gallery -->
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <img
+            src="https://images.unsplash.com/photo-1633409361618-c73427e4e206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+            alt="description"
+            class="mx-auto max-h-[400px] lg:max-h-[400px]"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1633409361618-c73427e4e206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+            alt="description"
+            class="mx-auto max-h-[400px] lg:max-h-[400px]"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1633409361618-c73427e4e206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+            alt="description"
+            class="mx-auto max-h-[400px] lg:max-h-[400px]"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1633409361618-c73427e4e206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+            alt="description"
+            class="mx-auto max-h-[400px] lg:max-h-[400px]"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1633409361618-c73427e4e206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+            alt="description"
+            class="mx-auto max-h-[400px] lg:max-h-[400px]"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1633409361618-c73427e4e206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+            alt="description"
+            class="mx-auto max-h-[400px] lg:max-h-[400px]"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ==== End Visual Explorations ====  -->
+
+    <!-- ==== Start Personal Projects ==== -->
+    <section class="my-16">
+      <div class="container">
+        <h1 class="text-light-white mb-8 text-center text-3xl">
+          Personal Projects
+        </h1>
+        <!-- gallery -->
+        <div class="grid gap-6 lg:grid-cols-3">
+          <img
+            src="https://images.unsplash.com/photo-1612296727051-4b2fa6f2bd47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZpZ21hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="description"
+            class="mx-auto max-h-[600px] object-cover lg:max-h-full"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1612296727051-4b2fa6f2bd47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZpZ21hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="description"
+            class="mx-auto max-h-[600px] object-cover lg:max-h-full"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1612296727051-4b2fa6f2bd47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZpZ21hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            alt="description"
+            class="mx-auto max-h-[600px] object-cover lg:max-h-full"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ==== End Personal Projects ==== -->
+
+    <!-- ==== Start Contact ==== -->
+    <section id="contact" class="mb-16 mt-20">
+      <div class="container">
+        <h1 class="text-light-white mb-8 text-center text-4xl">Contact Me</h1>
+        <p class="text-light-gray mx-auto mb-8 w-1/2 text-center text-2xl">
+          If you are looking to hire a product designer, I’m currently available
+          for freelance work
+        </p>
+        <a
+          href="mailto:your@email.com"
+          class="bg-btn mx-auto block w-fit px-8 py-4 text-white duration-300 hover:shadow-xl hover:shadow-white/20"
+        >
+          <i class="bi bi-envelope"></i>
+          your@email.com
+        </a>
+      </div>
+    </section>
+    <!-- ==== End Contact ==== -->
+
+    <!-- === Start footer ==== -->
+    <footer class="border-t-[1px] border-white py-8">
+      <div
+        class="container flex flex-col items-center lg:flex-row-reverse lg:justify-between"
+      >
+        <div
+          class="text-light-gray mb-6 flex w-full max-w-[300px] justify-between text-xl duration-300 hover:text-white lg:mb-0"
+        >
+          <a href="#" class="text-light-gray duration-300 hover:text-white"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          <a href="#" class="text-light-gray duration-300 hover:text-white"
+            ><i class="bi bi-dribbble"></i
+          ></a>
+          <a href="#" class="text-light-gray duration-300 hover:text-white"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="#" class="text-light-gray duration-300 hover:text-white"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a href="#" class="text-light-gray duration-300 hover:text-white"
+            ><i class="bi bi-behance"></i
+          ></a>
+        </div>
+        <p class="text-light-gray">
+          Designed by <span class="text-white">Your Name</span> — Copyright 2021
+        </p>
+      </div>
+    </footer>
+    <!-- === End footer ==== -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
