@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply font-poppins h-full scroll-smooth text-xs lg:text-sm;
+  }
+
+  body {
+    @apply m-0 min-h-full p-0;
+  }
+
+  /* Hero Section */
+
+  .navbar {
+    @apply mx-auto block w-full px-4 py-5 lg:block lg:w-full lg:px-32;
+  }
+
+  .sticky-nav {
+    @apply fixed top-0 left-0 right-0 z-20 flex flex-col justify-between bg-slate-900/90 py-0 shadow-2xl
+    lg:flex lg:justify-between;
+  }
+
+  .menu-button {
+    @apply h-10 w-10 md:h-14 md:w-14;
+  }
+
+  .nav-links {
+    @apply relative text-sm font-light uppercase text-white before:absolute
+        before:-bottom-0.5 before:h-[3px] before:w-full before:-translate-x-1/2 before:bg-yellow-400 before:opacity-0 before:transition-[transform_opacity]
+        before:duration-200 visited:text-white hover:before:translate-x-0 hover:before:opacity-100
+        focus:before:translate-x-0 focus:before:opacity-100 lg:p-0 lg:text-lg;
+  }
+
+  .slider-section {
+    @apply flex w-full flex-col items-center justify-center p-0 transition-transform duration-1000 md:flex-row;
+  }
+
+  .slider--inactive {
+    @apply absolute;
+  }
+
+  .slider--text-container {
+    @apply my-20 flex w-full flex-col items-start justify-center px-4 lg:ml-32 lg:w-1/2 lg:p-0;
+  }
+
+  .text--title {
+    @apply relative my-0 mb-10 w-full p-5 outline outline-1 outline-yellow-400 lg:h-52 lg:w-3/5;
+  }
+
+  .text--intro {
+    @apply static left-20 text-center text-3xl font-semibold uppercase tracking-widest lg:absolute lg:whitespace-nowrap lg:text-4xl;
+  }
+
+  .text--portfolio {
+    @apply static left-20 my-10 text-center text-5xl font-semibold uppercase tracking-wider text-yellow-400 lg:absolute lg:whitespace-nowrap lg:text-8xl;
+  }
+
+  .text--read-more {
+    @apply w-full pt-10 pl-32 lg:pl-0;
+  }
+
+  .read-more-text {
+    @apply relative text-xl after:absolute after:-right-1/2 after:top-1/2 after:h-0.5 after:w-10 after:bg-white after:content-[''];
+  }
+
+  .slider--image-container {
+    @apply w-full lg:w-1/2;
+  }
+
+  .slider--image {
+    @apply mx-auto h-auto w-full lg:mx-0 lg:ml-auto lg:w-3/4;
+  }
+
+  .slider-button {
+    @apply mx-1 flex h-14 w-14 items-center justify-center rounded-full bg-slate-700 transition-[transform_colors]
+       hover:bg-slate-800 active:scale-95 active:ring-0;
+  }
+
+  /* About Me */
+  .section-title {
+    @apply relative text-3xl font-semibold after:absolute after:-bottom-1 after:left-1/4 after:right-1/4 after:h-0.5 after:bg-yellow-400;
+  }
+
+  .about-me-circle {
+    @apply flex h-52 w-52 items-center justify-center rounded-full bg-slate-800 p-10 text-white;
+  }
+
+  .circle-text {
+    @apply text-center text-xl font-semibold;
+  }
+
+  /* Blog Section */
+  .blog-container {
+    @apply my-4 flex flex-col;
+  }
+
+  .blog-title {
+    @apply my-4 text-center text-2xl font-semibold;
+  }
+
+  .blog-desc {
+    @apply text-justify text-xl lg:text-center;
+  }
+
+  /* Contact */
+  .input {
+    @apply my-4 w-full rounded border-0 p-4 outline-0 ring-1 ring-neutral-400 hover:ring-yellow-200 focus:ring-yellow-400;
+  }
+}
