@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Simple Portfolio Template</title>
+    <script type="module" defer src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <section
+      class="bg-hero-bg relative bg-cover bg-fixed bg-center text-white"
+      id="hero-section"
+    >
+      <article class="navbar">
+        <div class="flex items-center justify-between">
+          <h3 class="pt-2 text-3xl font-semibold uppercase">Willsim</h3>
+
+          <div class="pt-2 lg:hidden">
+            <button>
+              <img
+                src="./assets/images/menu.png"
+                alt="Menu Button"
+                class="menu-button"
+              />
+            </button>
+          </div>
+        </div>
+
+        <nav class="nav-items col-span-2 mt-2 hidden py-2 lg:block lg:py-5">
+          <ul class="flex justify-evenly gap-x-10 lg:justify-start">
+            <li>
+              <a href="#hero-section" class="nav-links">Home</a>
+            </li>
+
+            <li>
+              <a href="#about-section" class="nav-links">About</a>
+            </li>
+
+            <li>
+              <a href="#projects-section" class="nav-links">Projects</a>
+            </li>
+
+            <li>
+              <a href="#blogs-section" class="nav-links">Blog</a>
+            </li>
+
+            <li>
+              <a href="#contact-section" class="nav-links">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="relative flex items-center overflow-x-hidden">
+        <div class="slider-section">
+          <div class="slider--text-container">
+            <div class="text--title">
+              <h2 class="text--intro">I am Willsim my creative</h2>
+              <h1 class="text--portfolio">Portfolio</h1>
+            </div>
+
+            <div class="text--read-more">
+              <a href="" class="read-more-text"> Read More </a>
+            </div>
+          </div>
+
+          <div class="slider--image-container">
+            <img src="./assets/images/slider-img.png" class="slider--image" />
+          </div>
+        </div>
+
+        <div class="slider--inactive slider-section">
+          <div class="slider--text-container">
+            <div class="text--title">
+              <h2 class="text--intro">I Help Take Your Business To</h2>
+              <h1 class="text--portfolio">THE NEXT LEVEL</h1>
+            </div>
+
+            <div class="text--read-more">
+              <a href="" class="read-more-text"> Read More</a>
+            </div>
+          </div>
+
+          <div class="slider--image-container">
+            <img src="./assets/images/slider-img.png" class="slider--image" />
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="slider-button-container absolute bottom-0 left-5 z-20 flex translate-y-1/2 md:left-32"
+      >
+        <button class="slider-button slider-button--left">
+          <img
+            src="./assets/images/prev.png"
+            alt="Prev Button"
+            class="pointer-events-none"
+          />
+        </button>
+        <button class="slider-button slider-button--right">
+          <img
+            src="./assets/images/next.png"
+            alt="Next Button"
+            class="pointer-events-none"
+          />
+        </button>
+      </article>
+    </section>
+
+    <section class="flex flex-col items-center py-14" id="about-section">
+      <h3 class="section-title">UI/UX Design</h3>
+
+      <article
+        class="relative my-14 flex h-[39rem] flex-col items-center justify-center md:h-auto md:w-[39rem] md:flex-row"
+      >
+        <div class="about-me-circle absolute top-5 -z-10 md:top-auto md:left-5">
+          <p class="circle-text">
+            User <br />
+            Experience
+          </p>
+        </div>
+
+        <div class="about-me-circle bg-slate-100 text-slate-800">
+          <p class="circle-text">
+            Interface <br />
+            Design
+          </p>
+        </div>
+
+        <div
+          class="about-me-circle absolute bottom-5 md:bottom-auto md:right-5"
+        >
+          <p class="circle-text">
+            Mobile <br />
+            Apps
+          </p>
+        </div>
+      </article>
+
+      <span class="h-40 w-px bg-slate-800"></span>
+
+      <article class="my-5 flex w-2/3 flex-col items-center">
+        <h3
+          class="relative text-3xl font-semibold after:absolute after:-bottom-0.5 after:left-1/4 after:right-1/4 after:h-0.5 after:bg-yellow-400"
+        >
+          About
+        </h3>
+
+        <p class="my-5 mt-14 text-center text-base">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using LoremIt is a long established fact that a reader will be
+          distracted by the readable content of a page when looking at its
+          layout. The point of using Lorem
+        </p>
+      </article>
+
+      <article
+        class="flex w-2/3 flex-col items-center justify-center border border-dashed border-slate-800"
+      >
+        <img src="./assets/images/about-img.jpg" alt="About Me" class="w-1/2" />
+      </article>
+
+      <article class="relative mt-10">
+        <a href="" class="read-more-text text-black after:bg-black">
+          Read More
+        </a>
+      </article>
+    </section>
+
+    <section class="flex flex-col items-center py-14" id="projects-section">
+      <h3 class="section-title">My Projects</h3>
+
+      <article
+        class="grid-cols-fluid my-20 grid w-5/6 place-items-center gap-8 lg:w-3/4"
+      >
+        <div>
+          <img src="./assets/images/p-1.jpg" alt="Project 1" />
+        </div>
+        <div>
+          <img src="./assets/images/p-2.jpg" alt="Project 2" />
+        </div>
+        <div>
+          <img src="./assets/images/p-3.jpg" alt="Project 3" />
+        </div>
+
+        <div>
+          <img src="./assets/images/p-4.jpg" alt="Project 4" />
+        </div>
+        <div>
+          <img src="./assets/images/p-5.jpg" alt="Project 5" />
+        </div>
+        <div>
+          <img src="./assets/images/p-6.jpg" alt="Project 6" />
+        </div>
+
+        <div>
+          <img src="./assets/images/p-7.jpg" alt="Project 7" />
+        </div>
+        <div>
+          <img src="./assets/images/p-8.jpg" alt="Project 8" />
+        </div>
+        <div>
+          <img src="./assets/images/p-9.jpg" alt="Project 9" />
+        </div>
+      </article>
+    </section>
+
+    <section
+      class="mt-10 flex flex-col items-center py-0 md:flex-row"
+      id="expands-section"
+    >
+      <span class="my-10 h-px w-full bg-slate-800/30 md:hidden"></span>
+
+      <article class="w-full md:w-1/2">
+        <img
+          src="./assets/images/expand-img.jpg"
+          alt="Expand Image"
+          class="h-auto w-full"
+        />
+      </article>
+
+      <article
+        class="flex w-full flex-col justify-center self-stretch bg-slate-900 p-4 py-24 text-white md:w-1/2 md:px-12"
+      >
+        <h3 class="my-8 text-3xl font-semibold">
+          Expand your horizons, explore ours. It's all here. It's only here.
+        </h3>
+
+        <p class="mt-10 text-xl leading-7">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using LoremIt is a long established fact that a reader will be
+          distracted by the readable content of a page when looking at its
+          layout. The point of using Lorem
+        </p>
+      </article>
+    </section>
+
+    <section class="flex flex-col items-center py-2 pb-4" id="blogs-section">
+      <span class="h-40 w-px bg-slate-800"></span>
+      <h3 class="section-title">Checkout My Blog</h3>
+
+      <article class="my-20 flex w-5/6 flex-col gap-8 md:flex-row lg:w-3/4">
+        <div class="blog-container">
+          <img src="./assets/images/b-1.jpg" alt="Blog 1" />
+          <h4 class="blog-title">Readable content of a page</h4>
+          <p class="blog-desc">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem
+          </p>
+        </div>
+
+        <div class="blog-container">
+          <img src="./assets/images/b-2.jpg" alt="Blog 2" />
+          <h4 class="blog-title">Readable content of a page</h4>
+          <p class="blog-desc">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem
+          </p>
+        </div>
+
+        <div class="blog-container">
+          <img src="./assets/images/b-3.jpg" alt="Blog 3" />
+          <h4 class="blog-title">Readable content of a page</h4>
+          <p class="blog-desc">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section
+      class="flex flex-col items-center bg-neutral-50 py-14"
+      id="contact-section"
+    >
+      <h3 class="section-title">Contact Me</h3>
+
+      <form class="mt-10 flex w-5/6 flex-col justify-center md:w-3/4">
+        <input type="text" placeholder="Full Name" class="input" />
+        <input type="tel" placeholder="Phone Number" class="input" />
+        <input type="email" placeholder="E-Mail Address" class="input" />
+        <textarea rows="10" placeholder="Comments" class="input"></textarea>
+        <button
+          class="mx-auto mt-5 rounded bg-yellow-400 py-3 px-10 uppercase tracking-wide text-white shadow active:shadow-none"
+        >
+          Send
+        </button>
+      </form>
+    </section>
+
+    <footer
+      class="flex flex-col items-center justify-center bg-slate-900 py-14"
+    >
+      <h2 class="text-4xl font-semibold uppercase text-white">Let's Connect</h2>
+
+      <article class="mt-8 flex gap-x-10">
+        <a href="">
+          <img src="./assets/images/fb.png" alt="Facebook" />
+        </a>
+
+        <a href="">
+          <img src="./assets/images/twitter.png" alt="Twitter" />
+        </a>
+
+        <a href="">
+          <img src="./assets/images/linkedin.png" alt="LinkedIn" />
+        </a>
+
+        <a href="">
+          <img src="./assets/images/youtube.png" alt="Youtube" />
+        </a>
+      </article>
+
+      <span class="my-10 h-px w-full bg-neutral-200 md:w-2/3"></span>
+
+      <p class="text-white">
+        ©
+        <!-- Leave empty. JS will populate the year -->
+        <span class="copyright-year"></span>
+        All Rights Reserved By
+        <a
+          href="https://html.design/"
+          target="_blank"
+          class="visited:text-white"
+          >Free Html Templates</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
