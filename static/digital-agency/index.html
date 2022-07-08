@@ -16,32 +16,44 @@
   <body class="font-poppins">
     <header class="bg-[#F6F7F9]">
       <div
-        class="flex items-center justify-between px-8 py-4 lg:mx-auto lg:max-w-6xl lg:py-6"
+        class="relative flex items-center justify-between px-8 py-4 lg:mx-auto lg:max-w-6xl lg:py-6"
       >
         <a
           class="font-nunito font-extrabold text-[#1A0C06] sm:text-lg md:text-xl lg:text-2xl"
           href="/"
           >Agency</a
         >
-        <button class="sm:hidden">
+        <button class="relative z-30 sm:hidden" id="toggle-menu-btn">
           <img
             class="h-6 w-6"
             src="./assets/hamburger.svg"
             alt="hamburger icon"
           />
+          <img
+            class="hidden h-6 w-6"
+            src="./assets/close-btn.svg"
+            alt="close icon"
+          />
         </button>
         <nav
-          class="hidden sm:block sm:space-x-5 sm:text-xs sm:text-[#616161] lg:text-base"
+          class="absolute top-1 right-4 z-20 hidden w-56 space-y-4 rounded-md bg-white px-8 py-8 shadow-md sm:static sm:block sm:w-auto sm:space-y-0 sm:space-x-5 sm:bg-transparent sm:p-0 sm:text-xs sm:text-[#616161] sm:shadow-none lg:text-base"
+          id="nav-menu"
         >
-          <a href="#">Home</a>
-          <a href="#">Our Services</a>
-          <a href="#">Projects</a>
-          <a href="#">Blog</a>
-          <a href="#">About</a>
-          <a class="bg-primary rounded px-4 py-1 text-white" href="#"
+          <a class="block sm:inline-block" href="#">Home</a>
+          <a class="block sm:inline-block" href="#">Our Services</a>
+          <a class="block sm:inline-block" href="#">Projects</a>
+          <a class="block sm:inline-block" href="#">Blog</a>
+          <a class="block sm:inline-block" href="#">About</a>
+          <a
+            class="bg-primary block rounded px-4 py-1 text-center text-white sm:inline-block"
+            href="#"
             >Contact</a
           >
         </nav>
+        <div
+          class="fixed inset-0 z-10 hidden bg-gray-500/50 sm:hidden"
+          id="overlay"
+        ></div>
       </div>
     </header>
     <main>
