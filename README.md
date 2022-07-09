@@ -29,8 +29,6 @@ treat it as a normal project. CD into the project and run `yarn dev` as usual.
 
 ## Creating New Templates
 
-If you want to start working on your own template, you can simply create a new directory in the static folder.
-
 ### Example Using Vite & TailwindCSS
 
 1. run `cd static`
