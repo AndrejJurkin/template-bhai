@@ -89,7 +89,8 @@ window.addEventListener("load", function () {
 });
 
 menuButton.addEventListener("click", function () {
-  navItems.classList.toggle("hidden");
+  navItems.classList.toggle("nav-items--hidden");
+  navItems.classList.toggle("nav-items--active");
 });
 
 sliderButtonContainer.addEventListener("click", function (event) {

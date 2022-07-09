@@ -14,3 +14,4 @@ This is a simple portfolio template, contributed as part of the template-bhai op
 ## Credits
 
 - Template Design Taken from: [HTML Design](https://html.design/)
+- SVG Icons: [SVG Repo](https://www.svgrepo.com/)
