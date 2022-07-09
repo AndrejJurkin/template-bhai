@@ -2,6 +2,15 @@
 
 Description: TBD
 
+- [Important](#important)
+- [Getting Started](#getting-started)
+- [Creating New Templates](#creating-new-templates)
+  - [Example Using Vite & TailwindCSS](#example-using-vite--tailwindcss)
+  - [Example Using Next.js](#example-using-nextjs)
+- [What's Inside](#whats-inside)
+  - [Apps & Packages](#apps-and-packages)
+  - [Remote Caching](#remote-caching)
+
 ## Important
 
 This project is a monorepo created using [Turborepo](https://turborepo.org/).
@@ -18,7 +27,7 @@ treat it as a normal project. CD into the project and run `yarn dev` as usual.
 - To work on a specific app or package, cd to the respective directory and run `yarn dev`
 - To build all projects run `yarn build`
 
-## Creating a New Static Template
+## Creating New Templates
 
 If you want to start working on your own template, you can simply create a new directory in the static folder.
 
@@ -61,6 +70,32 @@ module.exports = {
 ```
 
 9. We're done! Run `yarn install` in the root project directory, then cd into your project and run `yarn dev`
+
+### Example Using Next.js
+
+1. run `cd apps`
+2. run `yarn create next-app`
+3. Go to `/apps/{your_project_name}` and open package.json
+4. Add `name: "{your_project_name}"` and `version: "0.0.0"` to package.json. The name must be unique in the project.
+5. run `yarn install`
+
+Your project is ready. 
+
+Because we are working with monorepo, we need to use `yarn workspace` to run commands in the selected project.
+
+**To start Next.js project run**
+  ```
+  yarn workspace {your_project_name} dev
+  ```
+**To add dependencies run**
+  ```
+  yarn workspace {your_project_name} add {dependency_name}
+  ```
+**To add dev dependencies run**
+  ```
+  yarn workspace {your_project_name} add {dependency_name} -D
+  ```
+
 
 ## What's inside?
 
