@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+
+  .nav-items--hidden {
+    @apply pointer-events-none h-0 -translate-y-64 opacity-0;
+  }
+
+  .nav-items--active {
+    @apply pointer-events-auto mt-10 mb-5 h-auto translate-y-0 opacity-100;
+  }
+}
