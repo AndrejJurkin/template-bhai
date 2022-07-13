@@ -13,36 +13,35 @@
       crossorigin="anonymous"
     ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>E-commerce Template</title>
     <script type="module" defer src="/main.js"></script>
   </head>
   <body class="font-inter bg-[#FAF0E6]">
     <header>
       <div
-        class="flex flex-row items-center justify-between px-6 py-8 lg:py-10 lg:mx-auto lg:max-w-6xl "
+        class="flex flex-row items-center justify-between px-6 py-8 lg:mx-auto lg:max-w-6xl lg:py-10"
       >
-        <nav class="hidden space-x-2 text-xs sm:block lg:text-xl sm:w-auto">
+        <nav class="hidden space-x-2 text-xs sm:block sm:w-auto lg:text-xl">
           <a href="" class="border-black hover:border-b-2">Home</a>
           <a href="" class="border-black hover:border-b-2">News</a>
           <a href="" class="border-black hover:border-b-2">Blog</a>
           <a href="" class="border-black hover:border-b-2">Sale</a>
           <a href="" class="border-black hover:border-b-2">Features</a>
         </nav>
-        <img class="w-16 h-16" src="/assets/logo.svg" alt="website logo" />
+        <img class="h-16 w-16" src="/assets/logo.svg" alt="website logo" />
         <div class="space-x-2 sm:hidden">
           <i
             id="searchBtn"
-            class="scale-100 fas fa-search"
+            class="fas fa-search scale-100"
             aria-hidden="true"
           ></i>
           <i id="open-sidebar" class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <!-- searchbar  -->
         <div
-          class="relative items-center justify-center hidden w-auto py-2 pl-8 pr-2 rounded-lg sm:flex bg-primary-light "
+          class="bg-primary-light relative hidden w-auto items-center justify-center rounded-lg py-2 pl-8 pr-2 sm:flex"
         >
           <img
-            class="w-4 h-4"
+            class="h-4 w-4"
             src="/assets/search-icon.svg"
             alt="search icon"
           />
@@ -52,60 +51,60 @@
             id="search-bar"
             name="search"
             placeholder="search"
-            class="w-36  mr-4  border-gray placeholder:text-[12px] placeholder:text-[#ED9D2A] px-2 outline-none border-r-[1px] bg-[#F9E5CA] border-[#694A1C]"
+            class="border-gray mr-4 w-36 border-r border-[#694A1C] bg-[#F9E5CA] px-2 outline-none placeholder:text-xs placeholder:text-[#ED9D2A]"
           />
           <img
-            class="w-6 h-6"
+            class="h-6 w-6"
             src="/assets/basket-icon.svg"
             alt="search icon"
           />
           <div
-            class="absolute w-6 h-6 pt-1 text-center rounded-full -right-1 -top-4 bg-primary"
+            class="bg-primary absolute -right-1 -top-4 h-6 w-6 rounded-full pt-1 text-center"
           >
-            <p class="text-[11px] text-white ">2</p>
+            <p class="text-tiny-medium text-white">2</p>
           </div>
         </div>
       </div>
 
       <div
         id="search-modal"
-        class="-mt-10 transition duration-500 ease-out nav-items--hidden sm:hidden"
+        class="nav-items--hidden -mt-10 transition duration-500 ease-out sm:hidden"
       >
         <div
-          class="relative flex items-center justify-center p-2 mx-auto rounded-lg w-fit bg-primary-light "
+          class="bg-primary-light relative mx-auto flex w-fit items-center justify-center rounded-lg p-2"
         >
-          <i class="scale-100 fas fa-search" aria-hidden="true"></i>
+          <i class="fas fa-search scale-100" aria-hidden="true"></i>
           <input
             type="text"
             placeholder="search "
-            class="w-1/2 mr-2 border-gray placeholder:text-[12px] placeholder:text-[#ED9D2A] px-2 outline-none border-r-2 bg-[#F9E5CA] border-black"
+            class="border-gray mr-2 w-1/2 border-r-2 border-black bg-[#F9E5CA] px-2 outline-none placeholder:text-xs placeholder:text-[#ED9D2A]"
           />
-          <i class="fa fa-shopping-basket " aria-hidden="true"></i>
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
           <div
-            class="absolute w-6 h-6 pt-1 text-center rounded-full -right-1 -top-4 bg-primary"
+            class="bg-primary absolute -right-1 -top-4 h-6 w-6 rounded-full pt-1 text-center"
           >
-            <p class="text-[11px] text-white ">2</p>
+            <p class="text-tiny-medium text-white">2</p>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="px-6 ">
-        <div class="flex flex-row max-w-6xl mx-auto mt-6 gap-x-4">
-          <div class="w-1/2 space-y-4 sm:space-y-8 lg:px-4 ">
-            <h1
-              class="text-4xl font-bold text-primary-bold lg:leading-2 font-noto-serif md:text-5xl lg:text-7xl"
+      <section class="px-6">
+        <div class="mx-auto mt-6 flex max-w-6xl flex-row gap-x-4">
+          <div class="w-1/2 space-y-4 sm:space-y-8 lg:px-4">
+            <h2
+              class="text-primary-bold lg:leading-2 font-noto-serif text-4xl font-bold md:text-5xl lg:text-7xl"
             >
               Better<br />
               Way to start <br />
               The Shopping
-            </h1>
-            <p class="text-xs sm:text-base text-primary-text">
+            </h2>
+            <p class="text-primary-text text-xs sm:text-base">
               Make the new experience of shopping get the<br />
               high quality products from your favourite brands.
             </p>
             <button
-              class="p-3 px-5 text-xs text-white rounded-lg sm:text-base border-rounded bg-primary "
+              class="border-rounded bg-primary rounded-lg p-3 px-5 text-xs text-white sm:text-base"
             >
               SHOP NOW
             </button>
@@ -119,79 +118,79 @@
         </div>
       </section>
 
-      <section class="px-6 lg:max-w-6xl lg:mx-auto mt-7 ">
+      <section class="mt-7 px-6 lg:mx-auto lg:max-w-6xl">
         <div>
           <div>
-            <h2 class="pb-1 text-3xl font-noto-serif text-primary-bold">
+            <h2 class="font-noto-serif text-primary-bold pb-1 text-3xl">
               Our Collection
             </h2>
-            <hr class="h-[2px] w-12 bg-primary" />
+            <hr class="bg-primary h-0.5 w-12" />
           </div>
 
           <div
-            class="flex flex-wrap sm:flex-row gap-y-8 justify-evenly mt-14 lg:mt-24 "
+            class="mt-14 flex flex-wrap justify-evenly gap-y-8 sm:flex-row lg:mt-24"
           >
             <div
-              class="relative flex items-center justify-center rounded-lg sm:w-1/3 bg-primary-light"
+              class="bg-primary-light relative flex items-center justify-center rounded-lg sm:w-1/3"
             >
               <img
-                class="object-cover h-48 min-h-0 w-52 md:w-72 md:h-full"
+                class="h-48 min-h-0 w-52 object-cover md:h-full md:w-72"
                 src="/assets/bag.png"
                 alt="a bag"
               />
               <div
-                class="absolute bottom-0 left-0 flex flex-col w-3/4 p-2 bg-white md:p-3"
+                class="absolute bottom-0 left-0 flex w-3/4 flex-col bg-white p-2 md:p-3"
               >
-                <p class="text-xl font-bold text-primary-bold">
+                <p class="text-primary-bold text-xl font-bold">
                   Bag collection
                 </p>
-                <u class="text-xs text-primary-text">Shop now</u>
+                <u class="text-primary-text text-xs">Shop now</u>
               </div>
             </div>
 
             <div
-              class="relative flex items-center justify-center px-2 py-5 rounded-lg w-fit md:w-1/4 h-3/4 md:h-1/2 bg-primary-light"
+              class="bg-primary-light relative flex h-3/4 w-fit items-center justify-center rounded-lg px-2 py-5 md:h-1/2 md:w-1/4"
             >
               <img
-                class="object-cover w-48 h-48 min-h-0"
+                class="h-48 min-h-0 w-48 object-cover"
                 src="/assets/shoe.png"
                 alt="a bag"
               />
               <div
-                class="absolute bottom-0 left-0 flex flex-col w-3/4 p-2 bg-white"
+                class="absolute bottom-0 left-0 flex w-3/4 flex-col bg-white p-2"
               >
-                <p class="font-bold text-primary-bold">Bag collection</p>
-                <u class="text-[9px] text-primary-text">Shop now</u>
+                <p class="text-primary-bold font-bold">Bag collection</p>
+                <u class="text-primary-text text-tiny">Shop now</u>
               </div>
             </div>
 
             <div
-              class="relative flex items-center justify-center px-2 py-5 rounded-lg w-fit md:w-1/4 h-3/4 md:h-1/2 bg-primary-light"
+              class="bg-primary-light relative flex h-3/4 w-fit items-center justify-center rounded-lg px-2 py-5 md:h-1/2 md:w-1/4"
             >
               <img
-                class="object-cover w-48 h-48 min-h-0"
+                class="h-48 min-h-0 w-48 object-cover"
                 src="/assets/watch.png"
                 alt="a bag"
               />
               <div
-                class="absolute bottom-0 left-0 flex flex-col w-3/4 p-2 bg-white"
+                class="absolute bottom-0 left-0 flex w-3/4 flex-col bg-white p-2"
               >
-                <p class="font-bold text-primary-bold">Bag collection</p>
-                <u class="text-[9px] text-primary-text">Shop now</u>
+                <p class="text-primary-bold font-bold">Bag collection</p>
+                <u class="text-primary-text text-tiny">Shop now</u>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="px-6 mt-24 lg:max-w-6xl lg:mx-auto">
+      <section class="mt-24 px-6 lg:mx-auto lg:max-w-6xl">
         <div class="space-y-8 text-center">
-          <h1 class="text-3xl font-bold text-black font-noto-serif">
+          <h1 class="font-noto-serif text-3xl font-bold text-black">
             FEATURED CATEGORY
           </h1>
 
           <div
-            class="justify-center hidden space-x-8 md:flex text-primary-text"
+            class="text-primary-text hidden justify-center space-x-8 md:flex"
           >
             <a class="border-black hover:border-b-2" href="">Latest</a>
             <a class="border-black hover:border-b-2" href="">Best Selling</a>
@@ -200,21 +199,21 @@
           </div>
 
           <div
-            class="flex flex-row flex-wrap justify-center gap-x-2 lg:gap-x-3 gap-y-5 "
+            class="flex flex-row flex-wrap justify-center gap-x-2 gap-y-5 lg:gap-x-3"
           >
-            <div class="bg-white rounded-lg h-fit w-fit sm:w-1/4">
+            <div class="h-fit w-fit rounded-lg bg-white sm:w-1/4">
               <img
-                class="object-cover w-full rounded-t-lg h-52"
+                class="h-52 w-full rounded-t-lg object-cover"
                 src="/assets/eyeglasses.png"
                 alt="eyeglasses"
               />
-              <div class="pb-8 mt-2 text-center ">
+              <div class="mt-2 pb-8 text-center">
                 <div class="space-y-0">
                   <p class="font-bold">Gucci Glass</p>
-                  <p class="text-[10px] ">$26.00 - $30.00</p>
+                  <p class="text-[10px]">$26.00 - $30.00</p>
                 </div>
                 <div
-                  class="flex flex-row items-center justify-center px-3 py-2 mx-auto mt-4 text-xs text-white bg-primary rounded-xl gap-x-3 w-fit"
+                  class="bg-primary mx-auto mt-4 flex w-fit flex-row items-center justify-center gap-x-3 rounded-xl px-3 py-2 text-xs text-white"
                 >
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <p>Add to cart</p>
@@ -222,19 +221,19 @@
               </div>
             </div>
 
-            <div class="bg-white rounded-lg h-fit w-fit sm:w-1/4">
+            <div class="h-fit w-fit rounded-lg bg-white sm:w-1/4">
               <img
-                class="object-cover w-full rounded-t-lg h-52"
+                class="h-52 w-full rounded-t-lg object-cover"
                 src="/assets/waterproofbackpack.png"
                 alt="eyeglasses"
               />
-              <div class="pb-8 mt-2 text-center ">
+              <div class="mt-2 pb-8 text-center">
                 <div class="space-y-0">
                   <p class="font-bold">Gucci Glass</p>
-                  <p class="text-[10px] ">$26.00 - $30.00</p>
+                  <p class="text-[10px]">$26.00 - $30.00</p>
                 </div>
                 <div
-                  class="flex flex-row items-center justify-center px-3 py-2 mx-auto mt-4 text-xs text-white bg-primary rounded-xl gap-x-3 w-fit"
+                  class="bg-primary mx-auto mt-4 flex w-fit flex-row items-center justify-center gap-x-3 rounded-xl px-3 py-2 text-xs text-white"
                 >
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <p>Add to cart</p>
@@ -242,19 +241,19 @@
               </div>
             </div>
 
-            <div class="bg-white rounded-lg h-fit w-fit sm:w-1/4">
+            <div class="h-fit w-fit rounded-lg bg-white sm:w-1/4">
               <img
-                class="object-cover w-full rounded-t-lg h-52"
+                class="h-52 w-full rounded-t-lg object-cover"
                 src="/assets/smilingboy.png"
                 alt="eyeglasses"
               />
-              <div class="pb-8 mt-2 text-center ">
+              <div class="mt-2 pb-8 text-center">
                 <div class="space-y-0">
                   <p class="font-bold">Gucci Glass</p>
-                  <p class="text-[10px] ">$26.00 - $30.00</p>
+                  <p class="text-[10px]">$26.00 - $30.00</p>
                 </div>
                 <div
-                  class="flex flex-row items-center justify-center px-3 py-2 mx-auto mt-4 text-xs text-white bg-primary rounded-xl gap-x-3 w-fit"
+                  class="bg-primary mx-auto mt-4 flex w-fit flex-row items-center justify-center gap-x-3 rounded-xl px-3 py-2 text-xs text-white"
                 >
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <p>Add to cart</p>
@@ -262,19 +261,19 @@
               </div>
             </div>
 
-            <div class="bg-white rounded-lg h-fit w-fit sm:w-1/4">
+            <div class="h-fit w-fit rounded-lg bg-white sm:w-1/4">
               <img
-                class="object-cover w-full rounded-t-lg h-52"
+                class="h-52 w-full rounded-t-lg object-cover"
                 src="/assets/lady.png"
                 alt="eyeglasses"
               />
-              <div class="pb-8 mt-2 text-center ">
+              <div class="mt-2 pb-8 text-center">
                 <div class="space-y-0">
                   <p class="font-bold">Gucci Glass</p>
-                  <p class="text-[10px] ">$26.00 - $30.00</p>
+                  <p class="text-[10px]">$26.00 - $30.00</p>
                 </div>
                 <div
-                  class="flex flex-row items-center justify-center px-3 py-2 mx-auto mt-4 text-xs text-white bg-primary rounded-xl gap-x-3 w-fit"
+                  class="bg-primary mx-auto mt-4 flex w-fit flex-row items-center justify-center gap-x-3 rounded-xl px-3 py-2 text-xs text-white"
                 >
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                   <p>Add to cart</p>
@@ -284,7 +283,7 @@
           </div>
 
           <button
-            class="max-w-md p-2 text-center text-white rounded-lg md:p-4 bg-primary "
+            class="bg-primary max-w-md rounded-lg p-2 text-center text-white md:p-4"
           >
             Browse All Items
           </button>
@@ -292,63 +291,63 @@
       </section>
 
       <section class="mt-24">
-        <div class="px-10 lg:mx-auto lg:max-w-6xl ">
-          <h1 class="mb-8 text-3xl font-bold text-center text-noto-serif">
+        <div class="px-10 lg:mx-auto lg:max-w-6xl">
+          <h2 class="text-noto-serif mb-8 text-center text-3xl font-bold">
             Recent blog post
-          </h1>
+          </h2>
 
           <div class="flex flex-row flex-wrap justify-center gap-x-8 gap-y-4">
-            <div class="w-3/4 p-2 bg-white rounded-lg md:w-1/2 lg:w-1/4 h-fit ">
+            <div class="h-fit w-3/4 rounded-lg bg-white p-2 md:w-1/2 lg:w-1/4">
               <img
-                class="object-cover w-full h-48 rounded-md "
+                class="h-48 w-full rounded-md object-cover"
                 src="/assets/blogpost1.png"
                 alt="eyeglasss"
               />
-              <div class="px-1 space-y-2 text-start h-36">
-                <h1 class="text-[9px] lg:text-xs mb-5 pt-3">Lifestyle</h1>
-                <div class="mt-8 space-y-2 ">
-                  <p class="text-[11px] lg:text-base font-bold">
+              <div class="h-36 space-y-2 px-1 text-start">
+                <h2 class="text-tiny mb-5 pt-3 lg:text-xs">Lifestyle</h2>
+                <div class="mt-8 space-y-2">
+                  <p class="text-tiny-medium font-bold lg:text-base">
                     A Beautiful and Perfect Life
                   </p>
-                  <p class="text-[11px] lg:text-xs text-primary-text">
+                  <p class="text-primary-text text-tiny-medium lg:text-xs">
                     By Happy Customers on October 2017
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="w-3/4 p-2 bg-white rounded-lg md:w-1/2 lg:w-1/4 h-fit ">
+            <div class="h-fit w-3/4 rounded-lg bg-white p-2 md:w-1/2 lg:w-1/4">
               <img
-                class="object-cover w-full h-48 rounded-md "
+                class="h-48 w-full rounded-md object-cover"
                 src="/assets/blogpost2.png"
                 alt="eyeglasss"
               />
-              <div class="px-1 space-y-2 text-start h-36">
-                <h1 class="text-[9px] lg:text-xs mb-5 pt-3">Lifestyle</h1>
-                <div class="mt-8 space-y-2 ">
-                  <p class="text-[11px] lg:text-base font-bold">
+              <div class="h-36 space-y-2 px-1 text-start">
+                <h2 class="text-tiny mb-5 pt-3 lg:text-xs">Lifestyle</h2>
+                <div class="mt-8 space-y-2">
+                  <p class="text-tiny-medium font-bold lg:text-base">
                     A Beautiful and Perfect Life
                   </p>
-                  <p class="text-[11px] lg:text-xs text-primary-text">
+                  <p class="text-primary-text text-tiny-medium lg:text-xs">
                     By Happy Customers on October 2017
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="w-3/4 p-2 bg-white rounded-lg md:w-1/2 lg:w-1/4 h-fit">
+            <div class="h-fit w-3/4 rounded-lg bg-white p-2 md:w-1/2 lg:w-1/4">
               <img
-                class="object-cover w-full h-48 rounded-md "
+                class="h-48 w-full rounded-md object-cover"
                 src="/assets/blogpost3.png"
                 alt="eyeglasss"
               />
-              <div class="px-1 space-y-2 text-start h-36">
-                <h1 class="text-[9px] lg:text-xs mb-5 pt-3">Lifestyle</h1>
-                <div class="mt-8 space-y-2 ">
-                  <p class="text-[11px] lg:text-base font-bold">
+              <div class="h-36 space-y-2 px-1 text-start">
+                <h2 class="text-tiny mb-5 pt-3 lg:text-xs">Lifestyle</h2>
+                <div class="mt-8 space-y-2">
+                  <p class="text-tiny-medium font-bold lg:text-base">
                     A Beautiful and Perfect Life
                   </p>
-                  <p class="text-[11px] lg:text-xs text-primary-text">
+                  <p class="text-primary-text text-tiny-medium lg:text-xs">
                     By Happy Customers on October 2017
                   </p>
                 </div>
@@ -357,16 +356,16 @@
           </div>
 
           <div
-            class="flex flex-row max-w-lg mx-auto mt-8 text-center gap-x-3 sm:mt-24"
+            class="mx-auto mt-8 flex max-w-lg flex-row gap-x-3 text-center sm:mt-24"
           >
             <div
-              class="flex flex-col items-center w-48 space-y-3 h-fit hover:shadow-md hover:rounded-lg"
+              class="flex h-fit w-48 flex-col items-center space-y-3 hover:rounded-lg hover:shadow-md"
             >
               <div
-                class="flex items-center justify-center w-10 h-8 bg-white rounded-lg md:w-14 md:h-12"
+                class="flex h-8 w-10 items-center justify-center rounded-lg bg-white md:h-12 md:w-14"
               >
                 <img
-                  class="w-6 h-6 md:w-8 md:h-8"
+                  class="h-6 w-6 md:h-8 md:w-8"
                   src="/assets/van-svg.svg"
                   alt="van icon"
                 />
@@ -375,13 +374,13 @@
             </div>
 
             <div
-              class="flex flex-col items-center w-48 space-y-3 h-fit hover:shadow-md hover:rounded-lg"
+              class="flex h-fit w-48 flex-col items-center space-y-3 hover:rounded-lg hover:shadow-md"
             >
               <div
-                class="flex items-center justify-center w-10 h-8 bg-white rounded-lg md:w-14 md:h-12"
+                class="flex h-8 w-10 items-center justify-center rounded-lg bg-white md:h-12 md:w-14"
               >
                 <img
-                  class="w-6 h-6 md:w-8 md:h-8"
+                  class="h-6 w-6 md:h-8 md:w-8"
                   src="/assets/gift-icon.svg"
                   alt="gift icon"
                 />
@@ -389,27 +388,27 @@
               <p class="text-xs font-bold md:text-base">SPECIAL GIFT</p>
             </div>
             <div
-              class="flex flex-col items-center w-48 space-y-3 h-fit hover:shadow-md hover:rounded-lg"
+              class="flex h-fit w-48 flex-col items-center space-y-3 hover:rounded-lg hover:shadow-md"
             >
               <div
-                class="flex items-center justify-center w-10 h-8 bg-white rounded-lg md:w-14 md:h-12"
+                class="flex h-8 w-10 items-center justify-center rounded-lg bg-white md:h-12 md:w-14"
               >
                 <img
-                  class="w-6 h-6 md:w-8 md:h-8"
-                  src="/assets/money.svg"
+                  class="h-6 w-6 md:h-8 md:w-8"
+                  src="/assets/money-icon.svg"
                   alt="money icon"
                 />
               </div>
               <p class="text-xs font-bold md:text-base">MONEY BACK</p>
             </div>
             <div
-              class="flex flex-col items-center w-48 space-y-3 h-fit hover:shadow-md hover:rounded-lg"
+              class="flex h-fit w-48 flex-col items-center space-y-3 hover:rounded-lg hover:shadow-md"
             >
               <div
-                class="flex items-center justify-center w-10 h-8 bg-white rounded-lg md:w-14 md:h-12"
+                class="flex h-8 w-10 items-center justify-center rounded-lg bg-white md:h-12 md:w-14"
               >
                 <img
-                  class="w-6 h-6 md:w-8 md:h-8"
+                  class="h-6 w-6 md:h-8 md:w-8"
                   src="/assets/headset-svg.svg"
                   alt="headset icon"
                 />
@@ -421,128 +420,128 @@
       </section>
     </main>
 
-    <footer class="bg-[#FEF7F1] ">
-      <div class="flex flex-col px-10 mt-32 py-11 lg:mx-auto lg:max-w-6xl ">
-        <div class="mx-auto ">
+    <footer class="bg-[#FEF7F1]">
+      <div class="mt-32 flex flex-col px-10 py-11 lg:mx-auto lg:max-w-6xl">
+        <div class="mx-auto">
           <h4
-            class="text-base font-bold text-noto-serif md:text-3xl lg:text-4xl text-primary-bold"
+            class="text-noto-serif text-primary-bold text-base font-bold md:text-3xl lg:text-4xl"
           >
             Subscribe to our Newsletter
           </h4>
           <p
-            class="text-center text-[9px] sm:text-base text-primary-very-light pt-4 pb-1"
+            class="text-primary-very-light text-tiny pt-4 pb-1 text-center sm:text-base"
           >
             sign up and get cutting edge marketing insights
           </p>
-          <div class="relative mx-auto text-center w-fit ">
+          <div class="relative mx-auto w-fit text-center">
             <label class="sr-only" for="email"></label>
             <input
               type="text"
               placeholder="Your Email Address"
               name="email"
               id="email"
-              class="outline-none py-4 px-4 text-xs sm:text-base text-primary-very-light  placeholder:text-[9px] sm:placeholder:text-base bg-[#FAF0E6]  w-3/5 md:w-[90%] h-6 border-b-[1px] border-gray"
+              class="text-primary-very-light border-gray placeholder:text-tiny h-6 w-3/5 border-b bg-[#FAF0E6] py-4 px-4 text-xs outline-none sm:text-base sm:placeholder:text-base md:w-[90%]"
             />
             <i
-              class="absolute scale-100 fa fa-envelope-o top-2 right-3 sm:-right-48 md:-right-1 "
+              class="fa fa-envelope-o absolute top-2 right-3 scale-100 sm:-right-48 md:-right-1"
               aria-hidden="true"
             ></i>
           </div>
         </div>
-        <div class="flex flex-col-reverse justify-around mt-16 sm:flex-row">
+        <div class="mt-16 flex flex-col-reverse justify-around sm:flex-row">
           <div>
             <img
-              class="w-16 h-16 sm:w-28 "
+              class="h-16 w-16 sm:w-28"
               src="/assets/website-logo.svg"
               alt="website logo"
             />
-            <div class="flex flex-row space-x-2 w-fit">
+            <div class="flex w-fit flex-row space-x-2">
               <div
-                class="w-4 h-4 rounded-full border-[1px] border-primary flex justify-center items-center"
+                class="border-primary flex h-4 w-4 items-center justify-center rounded-full border"
               >
-                <img class="w-2 h-2 " src="/assets/facebook.svg" alt="" />
+                <img class="h-2 w-2" src="/assets/facebook.svg" alt="" />
               </div>
               <div
-                class="w-4 h-4 rounded-full border-[1px] border-primary flex justify-center items-center"
+                class="border-primary flex h-4 w-4 items-center justify-center rounded-full border"
               >
-                <img class="w-2 h-2" src="/assets/twitter.svg" alt="" />
+                <img class="h-2 w-2" src="/assets/twitter.svg" alt="" />
               </div>
               <div
-                class="w-4 h-4 rounded-full border-[1px] border-primary flex justify-center items-center"
+                class="border-primary flex h-4 w-4 items-center justify-center rounded-full border"
               >
-                <img class="w-2 h-2" src="/assets/linkedin.svg" alt="" />
+                <img class="h-2 w-2" src="/assets/linkedin.svg" alt="" />
               </div>
               <div
-                class="w-4 h-4 rounded-full border-[1px] border-primary flex justify-center items-center"
+                class="border-primary flex h-4 w-4 items-center justify-center rounded-full border"
               >
-                <img class="w-2 h-2" src="/assets/instagram.svg" alt="" />
+                <img class="h-2 w-2" src="/assets/instagram.svg" alt="" />
               </div>
             </div>
           </div>
           <div
-            class="flex flex-col justify-between space-y-6 md:space-y-0 md:flex-row md:space-x-3 lg:space-x-24"
+            class="flex flex-col justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-3 lg:space-x-24"
           >
             <div>
-              <p class="text-2xl font-bold lg:text-4xl text-primary-bold">
+              <p class="text-primary-bold text-2xl font-bold lg:text-4xl">
                 Company
               </p>
-              <div class="flex flex-col pt-1 space-y-2">
-                <p class="text-xs text-primary-very-light sm:text-base">
+              <div class="flex flex-col space-y-2 pt-1">
+                <p class="text-primary-very-light text-xs sm:text-base">
                   About us
                 </p>
-                <p class="text-xs text-primary-very-light sm:text-base">
+                <p class="text-primary-very-light text-xs sm:text-base">
                   Our Services
                 </p>
-                <p class="text-xs text-primary-very-light sm:text-base">
+                <p class="text-primary-very-light text-xs sm:text-base">
                   Affiliate Program
                 </p>
-                <p class="text-xs text-primary-very-light sm:text-base">
+                <p class="text-primary-very-light text-xs sm:text-base">
                   Privacy Policy
                 </p>
               </div>
             </div>
             <div>
-              <p class="text-2xl font-bold lg:text-4xl text-primary-bold">
+              <p class="text-primary-bold text-2xl font-bold lg:text-4xl">
                 Get Help
               </p>
-              <div class="flex flex-col pt-1 space-y-2">
-                <p class="text-xs text-primary-very-light sm:text-base">FAQ</p>
-                <p class="text-xs text-primary-very-light sm:text-base">
+              <div class="flex flex-col space-y-2 pt-1">
+                <p class="text-primary-very-light text-xs sm:text-base">FAQ</p>
+                <p class="text-primary-very-light text-xs sm:text-base">
                   Returns
                 </p>
-                <p class="text-xs text-primary-very-light sm:text-base">
+                <p class="text-primary-very-light text-xs sm:text-base">
                   Payment Option
                 </p>
-                <p class="text-xs text-primary-very-light sm:text-base">
+                <p class="text-primary-very-light text-xs sm:text-base">
                   Shipping and delivery
                 </p>
               </div>
             </div>
             <div>
-              <p class="text-2xl font-bold lg:text-4xl text-primary-bold">
+              <p class="text-primary-bold text-2xl font-bold lg:text-4xl">
                 Online Shop
               </p>
-              <div class="flex flex-col pt-1 space-y-2">
-                <p class="text-xs text-primary-very-light sm:text-base">
+              <div class="flex flex-col space-y-2 pt-1">
+                <p class="text-primary-very-light text-xs sm:text-base">
                   Accessories
                 </p>
-                <p class="text-xs text-primary-very-light sm:text-base">
+                <p class="text-primary-very-light text-xs sm:text-base">
                   Clothes and Apparels
                 </p>
-                <p class="text-xs text-primary-very-light sm:text-base">
+                <p class="text-primary-very-light text-xs sm:text-base">
                   Women
                 </p>
-                <p class="text-xs text-primary-very-light sm:text-base">Men</p>
+                <p class="text-primary-very-light text-xs sm:text-base">Men</p>
               </div>
             </div>
           </div>
         </div>
-        <hr class="w-full my-6 sm:my-12 bg-primary-very-light" />
+        <hr class="bg-primary-very-light my-6 w-full sm:my-12" />
         <div
           class="flex flex-col-reverse items-center justify-around md:flex-row md:justify-between"
         >
           <!-- gets the current year from javascript -->
-          <p class="text-[9px] text-primary-very-light pt-12 md:pt-0">
+          <p class="text-primary-very-light text-tiny pt-12 md:pt-0">
             ©<span id="copyright-year"></span> Webdesigns.io. All rights
             reserved.
           </p>
@@ -554,16 +553,16 @@
     </footer>
     <div
       id="sidebar"
-      class="bg-[#ED9E2D] overscroll-y-none py-8 px-4 h-screen translate-x-full transition duration-3000 ease-in-out w-3/4 z-20 fixed top-0 right-0"
+      class="duration-3000 fixed top-0 right-0 z-20 h-screen w-3/4 translate-x-full overscroll-y-none bg-[#ED9E2D] py-8 px-4 transition ease-in-out"
     >
       <div class="flex flex-row justify-end">
         <img
           id="close-sideBar"
-          class="mb-8 text-white w-7 h-7"
+          class="mb-8 h-7 w-7 text-white"
           src="/assets/cancel-icon.svg"
         />
       </div>
-      <div class="flex flex-col space-y-3 ">
+      <div class="flex flex-col space-y-3">
         <a href="#" class="border-b-2 border-black">Home</a>
         <a href="#" class="border-b-2 border-black">News</a>
         <a href="#" class="border-b-2 border-black">Blogs</a>
@@ -571,5 +570,10 @@
         <a href="#" class="border-b-2 border-black">Features</a>
       </div>
     </div>
+
+    <div
+      class="fixed inset-0 z-10 hidden bg-gray-500/50 sm:hidden"
+      id="overlay"
+    ></div>
   </body>
 </html>
