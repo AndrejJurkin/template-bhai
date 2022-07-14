@@ -13,3 +13,5 @@ menuBtn.addEventListener("click", () => {
   sidebar.classList.remove("translate-x-full");
   sidebar.classList.add("translate-x-0");
 });
+
+document.querySelector("#copyright-year").innerText = new Date().getFullYear();
