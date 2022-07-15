@@ -1,7 +1,6 @@
-import { DotSmall } from "./Dot";
-import Link from "next/link";
+import { Dot } from "./Dot";
 
-export default function About() {
+export default function Projects() {
   return (
     <section
       id="projects"
@@ -9,12 +8,12 @@ export default function About() {
     >
       <h2 className="text-4xl text-white">
         Projects
-        <DotSmall />
+        <Dot />
       </h2>
       <div className="gap-8 xl:grid xl:grid-cols-2">
         <div className="flex items-center h-full max-w-xl p-4 mx-auto my-2 overflow-hidden rounded shadow-lg bg-neutral-800">
           <div className="px-6 py-4">
-            <div className="mb-2 text-xl font-bold">Project tittle</div>
+            <h3 className="mb-2 text-xl font-bold">Project tittle</h3>
             <p className="mt-4 text-xl text-gray-400 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem harum, quisquam totam sunt cumque facilis vel laborum
@@ -25,7 +24,7 @@ export default function About() {
         </div>
         <div className="flex items-center h-full max-w-xl p-4 mx-auto my-2 overflow-hidden rounded shadow-lg bg-neutral-800">
           <div className="px-6 py-4">
-            <div className="mb-2 text-xl font-bold">Project tittle</div>
+            <h3 className="mb-2 text-xl font-bold">Project tittle</h3>
             <p className="mt-4 text-xl text-gray-400 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem harum, quisquam totam sunt cumque facilis vel laborum
@@ -36,7 +35,7 @@ export default function About() {
         </div>
         <div className="flex items-center h-full max-w-xl p-4 mx-auto my-2 overflow-hidden rounded shadow-lg bg-neutral-800">
           <div className="px-6 py-4">
-            <div className="mb-2 text-xl font-bold">Project tittle</div>
+            <h3 className="mb-2 text-xl font-bold">Project tittle</h3>
             <p className="mt-4 text-xl text-gray-400 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem harum, quisquam totam sunt cumque facilis vel laborum
@@ -47,7 +46,7 @@ export default function About() {
         </div>
         <div className="flex items-center h-full max-w-xl p-4 mx-auto my-2 overflow-hidden rounded shadow-lg bg-neutral-800">
           <div className="px-6 py-4">
-            <div className="mb-2 text-xl font-bold">Project tittle</div>
+            <h3 className="mb-2 text-xl font-bold">Project tittle</h3>
             <p className="mt-4 text-xl text-gray-400 ">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem harum, quisquam totam sunt cumque facilis vel laborum

@@ -1,7 +1,6 @@
-import { DotSmall } from "./Dot";
+import { Dot } from "./Dot";
 
-export default function About() {
-  const link_style = "underline underline-offset-2 hover:text-blue-800";
+export default function Experience() {
   return (
     <section
       id="experience"
@@ -9,24 +8,24 @@ export default function About() {
     >
       <h2 className="text-4xl text-white">
         I worked for
-        <DotSmall />
+        <Dot />
       </h2>
       <p className="text-lg text-gray-400 2xl:text-2xl">
-        <a href="#" className={link_style}>
+        <a href="#" className="link">
           Company name
         </a>{" "}
         as Role
         <br></br>
       </p>
       <p className="text-lg text-gray-400 2xl:text-2xl">
-        <a href="#" className={link_style}>
+        <a href="#" className="link">
           Company name
         </a>{" "}
         as Role
         <br></br>
       </p>
       <p className="text-lg text-gray-400 2xl:text-2xl">
-        <a href="#" className={link_style}>
+        <a href="#" className="link">
           Company name
         </a>{" "}
         as Role
