@@ -34,21 +34,19 @@ export default function Items() {
     },
   ];
   return (
-    <>
-      <div>
-        <ul className="items-center hidden space-x-6 lg:flex">
-          {nav_items.map((item, index) => {
-            return (
-              <Navlink
-                key={index}
-                name={item.name}
-                url={item.url}
-                home={item.home}
-              />
-            );
-          })}
-        </ul>
-      </div>
-    </>
+    <div>
+      <ul className="items-center hidden space-x-6 lg:flex">
+        {nav_items.map((item, index) => {
+          return (
+            <Navlink
+              key={index}
+              name={item.name}
+              url={item.url}
+              home={item.home}
+            />
+          );
+        })}
+      </ul>
+    </div>
   );
 }
