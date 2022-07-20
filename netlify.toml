@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/"
-  to = "/dist/"
-  status = 200
