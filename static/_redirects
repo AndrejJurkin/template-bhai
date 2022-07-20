@@ -1,1 +1,3 @@
-/ /dist/index.html
+[[redirects]]
+  from = "/"
+  to = "/dist/index.html"
