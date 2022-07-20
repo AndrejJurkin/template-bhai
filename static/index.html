@@ -25,8 +25,12 @@
       </ul>
     </section>
   </main>
-
-
 </body>
 <script type="module" src="/main.js"></script>
+<script>
+  // If location is / then redirect to /dist/index.html
+  if (window.location.pathname === '/') {
+    window.location.href = '/dist/index.html';
+  }
+</script>
 </html>
