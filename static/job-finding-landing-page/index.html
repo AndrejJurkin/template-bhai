@@ -13,111 +13,120 @@
     <title>Vite App</title>
   </head>
   <body class="font-poppins bg-bgColor">
-    <header class="flex items-center justify-between px-8 py-6">
+    <header class="flex items-center justify-between px-8 py-6 sm:px-10">
       <a href="#">
-        <img class="w-32" src="./assets/logo.svg" alt="logo" />
+        <img class="sm:w-32" src="./assets/logo.svg" alt="logo" />
       </a>
-      <button class="hover:bg-slate-500/50">
+      <button class="hover:bg-slate-500/50 lg:hidden">
         <img
           class="h-6 w-6"
           src="./assets/hamburger.svg"
           alt="hamburger icon"
         />
       </button>
-      <nav class="hidden">
-        <a href="#">Home</a>
-        <a href="`#">About Us</a>
-        <a href="#">Find Jobs</a>
-        <a href="#">Candidates</a>
-        <a href="#">Advice</a>
-      </nav>
-      <div class="hidden">
-        <button>Sign In</button>
-        <button>Upload Resume</button>
+      <div class="hidden text-[#2B2B2B] lg:flex">
+        <nav class="sm:space-x-3 md:text-sm">
+          <a href="#">Home</a>
+          <a href="`#">About Us</a>
+          <a href="#">Find Jobs</a>
+          <a href="#">Candidates</a>
+          <a href="#">Advice</a>
+        </nav>
+        <div class="sm:text-sm">
+          <button>Sign In</button>
+          <button>Upload Resume</button>
+        </div>
       </div>
     </header>
 
     <main class="mt-6">
-      <section class="px-8">
-        <h1
-          class="mx-auto max-w-xs text-center text-3xl font-semibold text-[#2D2D2D] sm:text-4xl"
-        >
-          Find the job that fits your life
-        </h1>
-        <p
-          class="mt-3 text-center text-xs text-[#4B5257] sm:mx-auto sm:max-w-sm sm:text-sm"
-        >
-          Amet nulla ornare neque, in diam ultrices et phasellus mattis. Eget
-          eget ut eget nib.
-        </p>
-
-        <form
-          class="mt-6 rounded-lg bg-white px-7 pt-6 pb-7 text-center sm:text-left"
-        >
-          <div class="divide-y-2 sm:flex sm:divide-y-0 sm:divide-x-2">
-            <div class="pb-3 sm:pb-0">
-              <label
-                class="font-semibold text-[#2D2D2D] sm:px-4"
-                for="user_location"
-                >Location</label
-              >
-              <input
-                class="inline-block w-full px-4 py-2 text-center placeholder:text-sm sm:text-left"
-                type="text"
-                name="location"
-                id="user_location"
-                placeholder="Enter location"
-              />
-            </div>
-            <div class="pt-4 sm:pt-0">
-              <label
-                class="font-semibold text-[#2D2D2D] sm:px-4"
-                for="user_jobtype block"
-                >Type</label
-              >
-              <input
-                class="inline-block w-full px-4 py-2 text-center placeholder:text-sm sm:text-left"
-                type="text"
-                name="jobtype"
-                id="user_jobtype"
-                placeholder="Enter type of job"
-              />
-            </div>
-          </div>
-          <button
-            class="mt-3 flex w-full items-center justify-center space-x-3 rounded-lg bg-[#2D2D2D] py-4"
+      <section class="px-8 sm:px-10 md:relative md:flex md:pr-0 md:pb-5">
+        <article class="md:w-5/12">
+          <h1
+            class="mx-auto max-w-xs text-center text-3xl font-semibold text-[#2D2D2D] sm:max-w-sm sm:text-4xl md:mx-0 md:text-left md:text-3xl"
           >
-            <img
-              class="h-4 w-4"
-              src="./assets/search-icon.svg"
-              alt="Search Icon"
-            />
-            <span class="text-sm font-medium text-white">Search</span>
-          </button>
-        </form>
+            Find the job that fits your life
+          </h1>
+          <p
+            class="mt-3 text-center text-xs text-[#4B5257] sm:mx-auto sm:max-w-sm sm:text-sm md:text-left"
+          >
+            Amet nulla ornare neque, in diam ultrices et phasellus mattis. Eget
+            eget ut eget nib.
+          </p>
 
+          <form
+            class="mt-6 rounded-lg bg-white px-7 pt-6 pb-7 text-center sm:text-left md:p-4"
+          >
+            <div class="divide-y-2 sm:flex sm:divide-y-0 sm:divide-x-2">
+              <div class="pb-3 sm:pb-0">
+                <label
+                  class="font-semibold text-[#2D2D2D] sm:px-4"
+                  for="user_location"
+                  >Location</label
+                >
+                <input
+                  class="inline-block w-full px-4 py-2 text-center placeholder:text-sm sm:text-left md:py-1"
+                  type="text"
+                  name="location"
+                  id="user_location"
+                  placeholder="Enter location"
+                />
+              </div>
+              <div class="pt-4 sm:pt-0">
+                <label
+                  class="font-semibold text-[#2D2D2D] sm:px-4"
+                  for="user_jobtype block"
+                  >Type</label
+                >
+                <input
+                  class="inline-block w-full px-4 py-2 text-center placeholder:text-sm sm:text-left md:py-1"
+                  type="text"
+                  name="jobtype"
+                  id="user_jobtype"
+                  placeholder="Enter type of job"
+                />
+              </div>
+            </div>
+            <button
+              class="mt-3 flex w-full items-center justify-center space-x-3 rounded-lg bg-[#2D2D2D] py-4 md:py-3"
+            >
+              <img
+                class="h-4 w-4"
+                src="./assets/search-icon.svg"
+                alt="Search Icon"
+              />
+              <span class="text-sm font-medium text-white">Search</span>
+            </button>
+          </form>
+        </article>
         <img
-          class="mt-6 -translate-x-4"
+          class="mt-6 -translate-x-4 md:absolute md:right-0 md:bottom-0 md:mt-0 md:w-7/12 md:translate-x-0 md:object-cover"
           src="./assets/banner-image.png"
           alt="man holding a phone and smiling and social media are revolving around him"
         />
       </section>
 
-      <section class="bg-white px-8 pt-16">
+      <section class="bg-white px-8 pt-16 sm:px-10">
         <div class="relative bg-[#FFDDC2] py-10 text-lg text-[#2D2D2D]">
-          <div class="absolute top-0 left-0 right-0 flex justify-between">
-            <img src="./assets/decoration.svg" alt="decoration left" />
+          <div
+            class="absolute top-0 left-0 right-0 flex items-start justify-between"
+          >
             <img
-              class=""
+              class="md:w-20"
+              src="./assets/decoration.svg"
+              alt="decoration left"
+            />
+            <img
+              class="md:w-20"
               src="./assets/decoration.svg"
               style="transform: rotateY(180deg)"
               alt="decoration right"
             />
           </div>
           <ul
-            class="space-y-16 sm:flex sm:flex-wrap sm:justify-center sm:space-y-0"
+            class="space-y-16 sm:flex sm:flex-wrap sm:justify-center sm:gap-y-10 sm:space-y-0 md:flex-nowrap"
           >
-            <li class="flex flex-col items-center space-y-6 sm:w-full">
+            <li class="flex flex-col items-center space-y-6 sm:w-1/2 md:w-1/3">
               <img
                 class="w-16"
                 src="./assets/avatar-icon.svg"
@@ -125,7 +134,7 @@
               />
               <span>Register Your Account</span>
             </li>
-            <li class="flex flex-col items-center space-y-6 sm:w-1/2">
+            <li class="flex flex-col items-center space-y-6 sm:w-1/2 md:w-1/3">
               <img
                 class="w-16"
                 src="./assets/upload-icon.svg"
@@ -133,7 +142,7 @@
               />
               <span>Upload Your Resume</span>
             </li>
-            <li class="flex flex-col items-center space-y-6 sm:w-1/2">
+            <li class="flex flex-col items-center space-y-6 sm:w-full md:w-1/3">
               <img class="w-16" src="./assets/send-icon.svg" alt="send icon" />
               <span>Apply for Dream Job</span>
             </li>
@@ -143,12 +152,14 @@
 
       <section class="bg-white py-16">
         <h2
-          class="mx-auto max-w-xs text-center text-2xl font-semibold text-[#2D2D2D]"
+          class="mx-auto max-w-xs text-center text-2xl font-semibold text-[#2D2D2D] sm:text-3xl"
         >
           Choose Your Desired Category
         </h2>
 
-        <div class="mt-16 flex flex-col items-center space-y-10 px-8">
+        <div
+          class="mt-16 flex flex-wrap items-center justify-center gap-y-10 gap-x-6 px-8"
+        >
           <article
             class="flex space-x-5 rounded-xl bg-white py-5 pl-5 pr-14 shadow-md"
           >
@@ -259,14 +270,16 @@
       <section class="bg-[#FFDDC2] py-12">
         <article class="px-8">
           <h2
-            class="mx-auto max-w-xs text-center text-2xl font-semibold text-[#2D2D2D]"
+            class="mx-auto max-w-xs text-center text-2xl font-semibold text-[#2D2D2D] sm:text-3xl"
           >
             Featured Jobs
           </h2>
-          <p class="mt-3 text-center text-xs text-[#4C4C4C]">
+          <p class="mt-3 text-center text-xs text-[#4C4C4C] sm:text-sm">
             Hand-picked jobs featured depending on popularity and benifits
           </p>
-          <div class="mt-5 flex flex-col items-center gap-y-8 px-4">
+          <div
+            class="mt-5 flex flex-wrap items-center justify-center gap-y-8 gap-x-6 px-4"
+          >
             <article class="border border-[#2D2D2D] px-6 py-7">
               <h3 class="text-lg font-medium text-[#2D2D2D]">
                 Visual Design-Landing page Team
@@ -714,163 +727,200 @@
         </article>
       </section>
 
-      <section class="bg-white py-12 px-8 text-center">
-        <h2
-          class="mx-auto max-w-xs text-center text-2xl font-semibold text-[#2D2D2D]"
-        >
-          Why We are Most Popular
-        </h2>
-        <p class="mt-3 text-xs text-[#4C4C4C]">
-          Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-          maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices
-          gravida
-        </p>
+      <section
+        class="bg-white py-12 px-8 text-center md:flex md:items-center md:text-left"
+      >
+        <article class="md:w-1/2">
+          <h2 class="mx-auto text-2xl font-semibold text-[#2D2D2D] sm:text-3xl">
+            Why We are Most Popular
+          </h2>
+          <p
+            class="mt-3 text-xs text-[#4C4C4C] sm:mx-auto sm:max-w-xl sm:text-sm md:mx-0"
+          >
+            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+            maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse
+            ultrices gravida
+          </p>
 
-        <ul class="mt-9 flex flex-wrap justify-center gap-6">
-          <li
-            class="flex w-56 items-center gap-x-4 rounded-lg border border-[#E5D7CC] p-3"
+          <ul
+            class="mt-9 flex flex-wrap justify-center gap-6 md:justify-start md:gap-x-4 md:text-sm"
           >
-            <div
-              class="flex h-11 w-11 items-center justify-center rounded-lg bg-[#FFDDC2]"
+            <li
+              class="flex w-56 items-center gap-x-4 rounded-lg border border-[#E5D7CC] p-3 md:w-40"
             >
-              <img src="./assets/orion-diploma.svg" alt="diploma icon" />
-            </div>
-            <span class="font-medium text-[#2D2D2D]">Quality Job</span>
-          </li>
-          <li
-            class="flex w-56 items-center gap-x-4 rounded-lg border border-[#E5D7CC] p-3"
-          >
-            <div
-              class="flex h-11 w-11 items-center justify-center rounded-lg bg-[#FFDDC2]"
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-lg bg-[#FFDDC2]"
+              >
+                <img src="./assets/orion-diploma.svg" alt="diploma icon" />
+              </div>
+              <span class="font-medium text-[#2D2D2D]">Quality Job</span>
+            </li>
+            <li
+              class="flex w-56 items-center gap-x-4 rounded-lg border border-[#E5D7CC] p-3 md:w-40"
             >
-              <img src="./assets/orion-diploma.svg" alt="diploma icon" />
-            </div>
-            <span class="font-medium text-[#2D2D2D]">Top Companies</span>
-          </li>
-          <li
-            class="flex w-56 items-center gap-x-4 rounded-lg border border-[#E5D7CC] p-3"
-          >
-            <div
-              class="flex h-11 w-11 items-center justify-center rounded-lg bg-[#FFDDC2]"
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-lg bg-[#FFDDC2]"
+              >
+                <img src="./assets/orion-diploma.svg" alt="diploma icon" />
+              </div>
+              <span class="font-medium text-[#2D2D2D]">Top Companies</span>
+            </li>
+            <li
+              class="flex w-56 items-center gap-x-4 rounded-lg border border-[#E5D7CC] p-3 md:w-40"
             >
-              <img src="./assets/orion-diploma.svg" alt="diploma icon" />
-            </div>
-            <span class="font-medium text-[#2D2D2D]">No Extra Charge</span>
-          </li>
-          <li
-            class="flex w-56 items-center gap-x-4 rounded-lg border border-[#E5D7CC] p-3"
-          >
-            <div
-              class="flex h-11 w-11 items-center justify-center rounded-lg bg-[#FFDDC2]"
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-lg bg-[#FFDDC2]"
+              >
+                <img src="./assets/orion-diploma.svg" alt="diploma icon" />
+              </div>
+              <span class="font-medium text-[#2D2D2D]">No Extra Charge</span>
+            </li>
+            <li
+              class="flex w-56 items-center gap-x-4 rounded-lg border border-[#E5D7CC] p-3 md:w-40"
             >
-              <img src="./assets/orion-diploma.svg" alt="diploma icon" />
-            </div>
-            <span class="font-medium text-[#2D2D2D]">International Job</span>
-          </li>
-        </ul>
+              <div
+                class="flex h-11 w-11 items-center justify-center rounded-lg bg-[#FFDDC2]"
+              >
+                <img src="./assets/orion-diploma.svg" alt="diploma icon" />
+              </div>
+              <span class="font-medium text-[#2D2D2D]">International Job</span>
+            </li>
+          </ul>
+        </article>
 
         <img
-          class="mt-5"
+          class="mt-5 md:mt-0 md:w-1/2 md:object-cover"
           src="./assets/why-we-are-popular-img.png"
           alt="Man looking at the phone with a smile"
         />
       </section>
 
-      <section class="bg-white px-8 py-12 text-center">
-        <p class="text-xs font-medium text-[#0090FF]">Testimonial</p>
-        <h2
-          class="mx-auto mt-3 max-w-xs text-center text-2xl font-semibold text-[#2D2D2D]"
-        >
-          What Our Clients Are Saying
-        </h2>
-        <p class="mt-5 text-sm text-[#4C4C4C]">
-          It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. It was
-          popularised in the Letraset sheets containing passages.
-        </p>
-        <div>
-          <p class="mt-5 text-lg font-medium text-[#2D2D2D]">Tufayel Khan</p>
-          <p class="text-xs text-[#4C4C4C]">UX Leader Management</p>
-          <div class="mt-5">
-            <button class="rounded-full border-2 border-[#2D2D2D] p-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-            </button>
-            <button class="rounded-full border-2 border-[#2D2D2D] p-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 rotate-180"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-            </button>
+      <section
+        class="bg-white px-8 py-12 text-center md:flex md:items-center md:gap-x-8 md:text-left"
+      >
+        <img
+          class="hidden md:inline-block md:w-1/2"
+          src="./assets/man-pointing-review.png"
+          alt="man pointing toward top right"
+        />
+        <article class="md:w-1/2">
+          <p class="text-xs font-medium text-[#0090FF]">Testimonial</p>
+          <h2
+            class="mx-auto mt-3 max-w-xs text-2xl font-semibold text-[#2D2D2D] sm:max-w-sm sm:text-3xl"
+          >
+            What Our Clients Are Saying
+          </h2>
+          <p class="mx-auto mt-5 max-w-lg text-sm text-[#4C4C4C]">
+            It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was
+            popularised in the Letraset sheets containing passages.
+          </p>
+          <div class="md:flex md:items-center md:justify-between">
+            <div>
+              <p class="mt-5 text-lg font-medium text-[#2D2D2D]">
+                Tufayel Khan
+              </p>
+              <p class="text-xs text-[#4C4C4C]">UX Leader Management</p>
+            </div>
+            <div class="mt-5">
+              <button class="rounded-full border-2 border-[#2D2D2D] p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+              <button class="rounded-full border-2 border-[#2D2D2D] p-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 rotate-180"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>
+        </article>
       </section>
     </main>
 
     <footer class="bg-[#2D2D2D] py-12 px-8 text-[#989898]">
-      <img class="mx-auto" src="./assets/logo-white.svg" alt="logo" />
-      <p class="mt-6 text-center">
-        Contrary to popular belief, Lorem Ipsum is not simply random text.
-      </p>
-      <form class="mt-8" action="">
-        <div class="relative mx-auto max-w-xs">
-          <label class="sr-only" for="user_email">Email</label>
-          <input
-            class="w-full rounded-lg p-3.5 text-xs placeholder:text-[#666666]"
-            placeholder="Your email"
-            id="user_email"
-            type="email"
+      <div class="md:flex">
+        <div class="md:w-5/12">
+          <img
+            class="mx-auto w-36 md:mx-0 md:w-28"
+            src="./assets/logo-white.svg"
+            alt="logo"
           />
-          <button
-            class="absolute right-1.5 top-1.5 bottom-1.5 rounded-lg bg-[#ED9E2D] px-1.5"
-            type="button"
+          <p
+            class="mx-auto mt-6 max-w-sm text-center sm:text-sm md:mt-4 md:text-left"
           >
-            <img
-              class="h-5 w-5"
-              src="./assets/right-arrow.svg"
-              alt="right arrow"
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+          </p>
+          <form
+            class="relative mx-auto mt-8 max-w-xs md:mx-0 md:mt-5 md:mr-5"
+            action=""
+          >
+            <label class="sr-only" for="user_email">Email</label>
+            <input
+              class="w-full rounded-lg p-3.5 text-xs placeholder:text-[#666666]"
+              placeholder="Your email"
+              id="user_email"
+              type="email"
             />
-          </button>
+            <button
+              class="absolute right-1.5 top-1.5 bottom-1.5 rounded-lg bg-[#ED9E2D] px-1.5"
+              type="button"
+            >
+              <img
+                class="h-5 w-5"
+                src="./assets/right-arrow.svg"
+                alt="right arrow"
+              />
+            </button>
+          </form>
         </div>
-
-        <nav class="mt-10 flex flex-wrap justify-center gap-x-12 gap-y-8">
-          <div class="flex flex-col items-center text-sm">
+        <nav
+          class="mt-10 flex flex-wrap justify-center gap-x-12 gap-y-8 md:mt-0 md:w-2/3 md:gap-x-8"
+        >
+          <div
+            class="flex flex-col items-center text-sm md:items-start md:gap-y-3"
+          >
             <p class="text-base text-white">About Us</p>
             <a href="#">Careers</a>
             <a href="#">Our mission</a>
             <a href="#">How it started</a>
             <a href="#">Successes</a>
           </div>
-          <div class="flex flex-col items-center text-sm">
+          <div
+            class="flex flex-col items-center text-sm md:items-start md:gap-y-3"
+          >
             <p class="text-base text-white">For Creative</p>
             <a href="#">Explore positions</a>
             <a href="#">About suggestions</a>
             <a href="#">Getting started</a>
             <a href="#">Which plan</a>
           </div>
-          <div class="flex flex-col items-center text-sm">
+          <div
+            class="flex flex-col items-center text-sm md:items-start md:gap-y-3"
+          >
             <p class="text-base text-white">Resources</p>
             <a href="#">Our Userbase</a>
             <a href="#">Why pick us?</a>
@@ -878,13 +928,13 @@
             <a href="#">Getting Plan</a>
           </div>
         </nav>
+      </div>
 
-        <!-- js -->
-        <hr class="mt-6 border-gray-500" />
-        <p class="mt-6 text-center text-sm">
-          © Copyright 2021 by lobar.net. All rights reserved.
-        </p>
-      </form>
+      <!-- js -->
+      <hr class="mt-6 border-gray-500" />
+      <p class="mt-6 text-center text-sm">
+        © Copyright 2021 by lobar.net. All rights reserved.
+      </p>
     </footer>
 
     <script type="module" src="/main.js"></script>
