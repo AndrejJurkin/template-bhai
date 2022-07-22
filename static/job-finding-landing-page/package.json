@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/job-finding-landing-page/dist/",
     "preview": "vite preview"
   },
   "devDependencies": {
