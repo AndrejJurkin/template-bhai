@@ -1,14 +1,13 @@
 {
-  "name": "simple-portfolio-template",
+  "name": "finance-template",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/simple-portfolio-template/dist/",
+    "build": "vite build --base=/finance-template/dist/",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.2",
     "vite": "^2.9.9"
   }
 }
