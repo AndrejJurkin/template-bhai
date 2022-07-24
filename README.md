@@ -67,7 +67,17 @@ module.exports = {
 @tailwind utilities;
 ```
 
-9. We're done! Run `yarn install` in the root project directory, then cd into your project and run `yarn dev`
+9. Create `vite.config.js` file and put the below code
+
+```js
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  base: "",
+});
+```
+
+10. We're done! Run `yarn install` in the root project directory, then cd into your project and run `yarn dev`
 
 ### Example Using Next.js
 
