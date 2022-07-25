@@ -20,7 +20,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="max-w-4xl px-4 mx-auto pt-32 space-y-8 text-center lg:mt-52"
+      className="max-w-4xl px-4 pt-32 mx-auto space-y-8 text-center lg:pt-52"
     >
       <h2 className="text-4xl text-white">
         {section_title}
