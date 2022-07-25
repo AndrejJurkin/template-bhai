@@ -2,7 +2,11 @@ import fs from "fs";
 import Link from "next/link";
 import path from "path";
 
-export default function Templates({ paths }) {
+interface TemplatesProps {
+  paths: string[];
+}
+
+export default function Templates({ paths }: TemplatesProps) {
   return (
     <div className="mt-20 flex flex-col items-center text-center">
       <h1 className="text-3xl font-bold">Templates Page</h1>
