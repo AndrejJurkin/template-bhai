@@ -1,1 +1,1 @@
-/templates/:templatename/dist/* https://template-bhai-test-static.netlify.app/:templatename/dist/:splat 200!
+/templates/:templatename/* https://template-bhai-test-static.netlify.app/:templatename/dist/:splat 200!

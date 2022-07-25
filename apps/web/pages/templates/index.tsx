@@ -12,7 +12,7 @@ export default function Templates({ paths }: TemplatesProps) {
       <h1 className="text-3xl font-bold">Templates Page</h1>
       <nav className="mt-8 flex flex-col space-y-1 text-blue-500">
         {paths.map((path) => (
-          <Link href={`/templates/${path}`}>
+          <Link href={`/templates/${path}/`}>
             <a>{path}</a>
           </Link>
         ))}
