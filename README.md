@@ -134,11 +134,3 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 ```console
 npx turbo link
 ```
-
-### Github Super Linter
-
-A github action to automatically find issues or bad practices with code, and help establish best practices.
-
-*Current Status:*
-
-[![GitHub Super-Linter](https://github.com/AndrejJurkin/template-bhai/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
