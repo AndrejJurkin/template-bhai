@@ -18,7 +18,7 @@ module.exports = {
   },
 
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2015,
     sourceType: "module",
     allowImportExportEverywhere: true,
   },
