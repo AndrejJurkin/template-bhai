@@ -6,10 +6,10 @@ export interface Stats {
   templates: number;
   contributors: number;
   commits: number;
-  githubStars: number;
+  "github stars": number;
 }
 
-const stats = {
+const stats: Stats = {
   templates: 20,
   contributors: 6,
   commits: 100,
@@ -22,7 +22,7 @@ export interface Contributor {
   avatarUrl: string;
 }
 
-const contributors = [
+const contributors: Contributor[] = [
   {
     name: "Andrej",
     username: "andrejjurkin",
