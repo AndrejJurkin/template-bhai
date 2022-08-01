@@ -4,7 +4,7 @@ interface Props {
   stats: Stats;
 }
 
-export default function Stats({ stats }: Props) {
+export default function StatSection({ stats }: Props) {
   return (
     <section className="py-14">
       <div className="container grid grid-cols-2 gap-y-9 gap-x-12 text-center sm:grid-cols-4">
