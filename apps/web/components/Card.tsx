@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { TemplateInterface } from "../utils/getAllTemplates";
 
 interface CardProps {
@@ -7,11 +8,14 @@ interface CardProps {
 export default function Card({ template }: CardProps) {
   return (
     <a href={template.link} className="max-w-xs xl:max-w-none">
-      <img
-        className="rounded-lg"
-        src="/previews/digital-agency.png"
-        alt="Digital Agency Preview"
-      />
+      <div className="overflow-hidden rounded-lg">
+        <Image
+          src="/previews/digital-agency.png"
+          layout="responsive"
+          width={1200}
+          height={636}
+        />
+      </div>
       <h3 className="mt-4 font-medium">{template.name}</h3>
     </a>
   );
