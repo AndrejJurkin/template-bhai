@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ContributorsInterface } from "../utils/getStatsAndContributors";
 
 interface ContributorsProps {
@@ -17,11 +18,14 @@ export default function Contributors({ contributors }: ContributorsProps) {
         <div className="mt-14 flex flex-wrap justify-center gap-x-12 gap-y-14 sm:gap-x-20 xl:gap-x-40 xl:gap-y-24">
           {contributors.map((contributor, index) => (
             <figure key={index} className="flex flex-col items-center">
-              <img
-                className="h-24 w-24 rounded-full"
-                src={contributor.avatarUrl}
-                alt={contributor.name}
-              />
+              <div className="h-24 w-24 overflow-hidden rounded-full">
+                <Image
+                  src={contributor.avatarUrl}
+                  alt={contributor.name}
+                  width={96}
+                  height={96}
+                />
+              </div>
               <figcaption className="mt-2 text-lg font-bold">
                 {contributor.name}
               </figcaption>
