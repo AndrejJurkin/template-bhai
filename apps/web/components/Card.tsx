@@ -10,7 +10,7 @@ export default function Card({ template }: Props) {
     <a href={template.link} className="max-w-xs xl:max-w-none">
       <div className="overflow-hidden rounded-lg">
         <Image
-          src="/previews/digital-agency.png"
+          src={template.src}
           layout="responsive"
           width={1200}
           height={636}

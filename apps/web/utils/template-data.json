@@ -1,26 +1,32 @@
 [
     {
         "name": "Digital Agency",
-        "link": "/templates/digital-agency"
+        "link": "/templates/digital-agency",
+        "src": "/previews/digital-agency.png"
     },
     {
         "name": "E-commerce Template",
-        "link": "/templates/e-commerce-template"
+        "link": "/templates/e-commerce-template",
+        "src": "/previews/digital-agency.png"
     },
     {
         "name": "Finance Template",
-        "link": "/templates/finance-template"
+        "link": "/templates/finance-template",
+        "src": "/previews/digital-agency.png"
     },
     {
         "name": "Job Finding Landing Page",
-        "link": "/templates/job-finding-landing-page"
+        "link": "/templates/job-finding-landing-page",
+        "src": "/previews/digital-agency.png"
     },
     {
         "name": "Product Designer Portfolio",
-        "link": "/templates/product-designer-portfolio"
+        "link": "/templates/product-designer-portfolio",
+        "src": "/previews/digital-agency.png"
     },
     {
         "name": "Simple Portfolio",
-        "link": "/templates/simple-portfolio-template"
+        "link": "/templates/simple-portfolio-template",
+        "src": "/previews/digital-agency.png"
     }
 ]
