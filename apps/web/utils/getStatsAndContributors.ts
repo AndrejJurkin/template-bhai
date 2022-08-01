@@ -13,7 +13,7 @@ const stats = {
   templates: 20,
   contributors: 6,
   commits: 100,
-  githubStars: 34,
+  "github stars": 34,
 };
 
 interface ContributorInterface {
