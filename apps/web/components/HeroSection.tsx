@@ -31,6 +31,8 @@ export default function HeroSection() {
           <Image
             src="/images/banner-image-desktop.png"
             layout="responsive"
+            sizes="50vw"
+            quality={100}
             width={2120}
             height={1774}
             priority
