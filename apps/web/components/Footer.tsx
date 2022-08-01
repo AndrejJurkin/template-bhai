@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { TwitterIcon, GithubIcon } from "../assets/icons";
+import NavLinks from "./NavLinks";
 
 export default function Footer() {
   return (
@@ -13,18 +14,7 @@ export default function Footer() {
             Template Bhai
           </a>
           <nav className="mt-4 flex flex-wrap justify-center gap-x-8 gap-y-2 lg:mt-0">
-            <Link href="/templates">
-              <a>Templates</a>
-            </Link>
-            <Link href="/templates">
-              <a>Components</a>
-            </Link>
-            <Link href="/templates">
-              <a>Documentation</a>
-            </Link>
-            <Link href="https://github.com/AndrejJurkin/template-bhai">
-              <a>GitHub</a>
-            </Link>
+            <NavLinks />
           </nav>
         </div>
         <hr className="mt-5 border-zinc-500 lg:mt-8" />

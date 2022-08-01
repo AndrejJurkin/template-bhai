@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { CloseIcon, HamburgerIcon } from "../assets/icons";
+import NavLinks from "./NavLinks";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,18 +38,7 @@ export default function Header() {
               menuOpen ? "opacity-1" : "opacity-0"
             }`}
           >
-            <Link href="/templates">
-              <a>Templates</a>
-            </Link>
-            <Link href="/templates">
-              <a>Components</a>
-            </Link>
-            <Link href="/templates">
-              <a>Documentation</a>
-            </Link>
-            <Link href="https://github.com/AndrejJurkin/template-bhai">
-              <a>GitHub</a>
-            </Link>
+            <NavLinks />
           </nav>
         </div>
       </div>
