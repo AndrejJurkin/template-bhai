@@ -13,13 +13,13 @@ import {
   Contributor,
 } from "../utils/getStatsAndContributors";
 
-interface WebProps {
+interface Props {
   stats: Stats;
   contributors: Contributor[];
   templates: Template[];
 }
 
-export default function Web({ stats, contributors, templates }: WebProps) {
+export default function Web({ stats, contributors, templates }: Props) {
   return (
     <div className="font-inter text-white">
       <Head>

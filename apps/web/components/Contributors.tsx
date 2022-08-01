@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Contributor } from "../utils/getStatsAndContributors";
 
-interface ContributorsProps {
+interface Props {
   contributors: Contributor[];
 }
 
-export default function Contributors({ contributors }: ContributorsProps) {
+export default function Contributors({ contributors }: Props) {
   return (
     <section className="mt-10 pb-14 xl:pb-24">
       <div className="container">
