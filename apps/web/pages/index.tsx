@@ -24,12 +24,6 @@ export default function Web({ stats, contributors, templates }: WebProps) {
     <div className="font-inter text-white">
       <Head>
         <title>Template Bhai</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
 
       <Header />
