@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { TemplateInterface } from "../utils/getAllTemplates";
+import { Template } from "../utils/getAllTemplates";
 
 interface CardProps {
-  template: TemplateInterface;
+  template: Template;
 }
 
 export default function Card({ template }: CardProps) {

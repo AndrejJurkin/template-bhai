@@ -1,22 +1,22 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
-import Stats from "../components/Stats";
+import StatSection from "../components/Stats";
 import TemplatesSection from "../components/TemplatesSection";
 import Contributors from "../components/Contributors";
 import Footer from "../components/Footer";
-import getAllTemplates, { TemplatesInterface } from "../utils/getAllTemplates";
+import getAllTemplates, { Template } from "../utils/getAllTemplates";
 import {
   getStats,
   getContributors,
-  StatsInterface,
-  ContributorsInterface,
+  Stats,
+  Contributor,
 } from "../utils/getStatsAndContributors";
 
 interface WebProps {
-  stats: StatsInterface;
-  contributors: ContributorsInterface;
-  templates: TemplatesInterface;
+  stats: Stats;
+  contributors: Contributor[];
+  templates: Template[];
 }
 
 export default function Web({ stats, contributors, templates }: WebProps) {
@@ -37,7 +37,7 @@ export default function Web({ stats, contributors, templates }: WebProps) {
       <main>
         <HeroSection />
         <div className="bg-zinc-900">
-          <Stats stats={stats} />
+          <StatSection stats={stats} />
           <TemplatesSection templates={templates} />
           <Contributors contributors={contributors} />
         </div>

@@ -1,7 +1,7 @@
-import { StatsInterface } from "../utils/getStatsAndContributors";
+import { Stats } from "../utils/getStatsAndContributors";
 
 interface StatsProps {
-  stats: StatsInterface;
+  stats: Stats;
 }
 
 export default function Stats({ stats }: StatsProps) {
@@ -9,11 +9,7 @@ export default function Stats({ stats }: StatsProps) {
     <section className="py-14">
       <div className="container grid grid-cols-2 gap-y-9 gap-x-12 text-center sm:grid-cols-4">
         {Object.keys(stats).map((stat, index) => (
-          <Stat
-            key={index}
-            stat={stat}
-            value={stats[stat as keyof StatsInterface]}
-          />
+          <Stat key={index} stat={stat} value={stats[stat as keyof Stats]} />
         ))}
       </div>
     </section>
