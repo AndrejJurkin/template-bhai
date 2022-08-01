@@ -18,11 +18,15 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <img
-          className="mt-8 lg:hidden"
-          src="/images/banner-image-mobile.png"
-          alt=""
-        />
+        <div className="mt-8 lg:hidden">
+          <Image
+            src="/images/banner-image-mobile.png"
+            layout="responsive"
+            width={716}
+            height={405}
+            priority
+          />
+        </div>
         <div className="mt-8 hidden lg:mt-0 lg:block">
           <Image
             src="/images/banner-image-desktop.png"
