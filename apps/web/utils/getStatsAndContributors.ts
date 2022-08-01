@@ -2,7 +2,7 @@
 // https://api.github.com/repos/andrejjurkin/template-bhai/stats/contributors
 // https://api.github.com/repos/AndrejJurkin/template-bhai/stargazers
 
-export interface StatsInterface {
+export interface Stats {
   templates: number;
   contributors: number;
   commits: number;
@@ -16,13 +16,11 @@ const stats = {
   "github stars": 34,
 };
 
-interface ContributorInterface {
+export interface Contributor {
   name: string;
   username: string;
   avatarUrl: string;
 }
-
-export interface ContributorsInterface extends Array<ContributorInterface> {}
 
 const contributors = [
   {

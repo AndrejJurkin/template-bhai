@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { ContributorsInterface } from "../utils/getStatsAndContributors";
+import { Contributor } from "../utils/getStatsAndContributors";
 
 interface ContributorsProps {
-  contributors: ContributorsInterface;
+  contributors: Contributor[];
 }
 
 export default function Contributors({ contributors }: ContributorsProps) {

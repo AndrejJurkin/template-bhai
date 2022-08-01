@@ -1,9 +1,9 @@
 import Card from "./Card";
 import GradientButton from "./GradientButton";
-import { TemplatesInterface } from "../utils/getAllTemplates";
+import { Template } from "../utils/getAllTemplates";
 
 interface TemplatesSectionProps {
-  templates: TemplatesInterface;
+  templates: Template[];
 }
 
 export default function TemplatesSection({ templates }: TemplatesSectionProps) {
