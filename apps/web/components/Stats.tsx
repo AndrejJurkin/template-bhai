@@ -9,7 +9,11 @@ export default function Stats({ stats }: StatsProps) {
     <section className="py-14">
       <div className="container grid grid-cols-2 gap-y-9 gap-x-12 text-center sm:grid-cols-4">
         {Object.keys(stats).map((stat, index) => (
-          <Stat key={index} stat={stat} value={stats[stat]} />
+          <Stat
+            key={index}
+            stat={stat}
+            value={stats[stat as keyof StatsInterface]}
+          />
         ))}
       </div>
     </section>
@@ -18,7 +22,7 @@ export default function Stats({ stats }: StatsProps) {
 
 interface StatProps {
   stat: string;
-  value: string;
+  value: number;
 }
 
 function Stat({ stat, value }: StatProps) {
