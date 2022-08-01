@@ -2,11 +2,11 @@ import Card from "./Card";
 import GradientButton from "./GradientButton";
 import { Template } from "../utils/getAllTemplates";
 
-interface TemplatesSectionProps {
+interface Props {
   templates: Template[];
 }
 
-export default function TemplatesSection({ templates }: TemplatesSectionProps) {
+export default function TemplatesSection({ templates }: Props) {
   return (
     <section className="pb-14">
       <div className="container">

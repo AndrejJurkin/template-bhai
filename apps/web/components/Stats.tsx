@@ -1,10 +1,10 @@
 import { Stats } from "../utils/getStatsAndContributors";
 
-interface StatsProps {
+interface Props {
   stats: Stats;
 }
 
-export default function Stats({ stats }: StatsProps) {
+export default function Stats({ stats }: Props) {
   return (
     <section className="py-14">
       <div className="container grid grid-cols-2 gap-y-9 gap-x-12 text-center sm:grid-cols-4">

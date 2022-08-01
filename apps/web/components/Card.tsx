@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Template } from "../utils/getAllTemplates";
 
-interface CardProps {
+interface Props {
   template: Template;
 }
 
-export default function Card({ template }: CardProps) {
+export default function Card({ template }: Props) {
   return (
     <a href={template.link} className="max-w-xs xl:max-w-none">
       <div className="overflow-hidden rounded-lg">
