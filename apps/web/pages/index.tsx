@@ -49,9 +49,11 @@ export default function Web({ stats, contributors, templates }: WebProps) {
 }
 
 export async function getStaticProps() {
-  const stats = await getStats();
-  const contributors = await getContributors();
-  const templates = await getAllTemplates();
+  const [stats, contributors, templates] = await Promise.all([
+    getStats(),
+    getContributors(),
+    getAllTemplates(),
+  ]);
 
   return {
     props: {
