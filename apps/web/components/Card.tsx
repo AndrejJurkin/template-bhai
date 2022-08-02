@@ -14,6 +14,8 @@ export default function Card({ template }: Props) {
           layout="responsive"
           width={1200}
           height={636}
+          sizes="40vw"
+          quality={100}
         />
       </div>
       <h3 className="mt-4 font-medium">{template.name}</h3>
