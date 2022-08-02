@@ -7,26 +7,26 @@
     {
         "name": "E-commerce Template",
         "link": "/templates/e-commerce-template",
-        "src": "/previews/digital-agency.png"
+        "src": "/previews/e-commerce.png"
     },
     {
         "name": "Finance Template",
         "link": "/templates/finance-template",
-        "src": "/previews/digital-agency.png"
+        "src": "/previews/finance-template.png"
     },
     {
         "name": "Job Finding Landing Page",
         "link": "/templates/job-finding-landing-page",
-        "src": "/previews/digital-agency.png"
+        "src": "/previews/job-finding-landing-page.png"
     },
     {
         "name": "Product Designer Portfolio",
         "link": "/templates/product-designer-portfolio",
-        "src": "/previews/digital-agency.png"
+        "src": "/previews/product-designer-portfolio.png"
     },
     {
         "name": "Simple Portfolio",
         "link": "/templates/simple-portfolio-template",
-        "src": "/previews/digital-agency.png"
+        "src": "/previews/simple-portfolio.png"
     }
 ]
