@@ -1,5 +1,7 @@
 import Image from "next/image";
 import GradientButton from "./GradientButton";
+import bannerImgDesktop from "../public/images/banner-image-desktop.png";
+import bannerImgMobile from "../public/images/banner-image-mobile.png";
 
 export default function HeroSection() {
   return (
@@ -20,21 +22,23 @@ export default function HeroSection() {
 
         <div className="mt-8 lg:hidden">
           <Image
-            src="/images/banner-image-mobile.png"
+            src={bannerImgMobile}
             layout="responsive"
             width={716}
             height={405}
+            placeholder="blur"
             priority
           />
         </div>
         <div className="mt-8 hidden lg:mt-0 lg:block">
           <Image
-            src="/images/banner-image-desktop.png"
+            src={bannerImgDesktop}
             layout="responsive"
             sizes="50vw"
             quality={100}
             width={2120}
             height={1774}
+            placeholder="blur"
             priority
           />
         </div>
