@@ -30,7 +30,7 @@ export default function HeroSection() {
             priority
           />
         </div>
-        <div className="mt-8 hidden lg:mt-0 lg:block">
+        <div className="mt-8 hidden lg:mt-0 lg:block lg:overflow-hidden lg:rounded-lg">
           <Image
             src={bannerImgDesktop}
             layout="responsive"
