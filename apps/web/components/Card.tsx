@@ -7,7 +7,7 @@ interface Props {
 
 export default function Card({ template }: Props) {
   return (
-    <a href={template.link} className="max-w-xs xl:max-w-none">
+    <a href={template.link} className="w-full max-w-xs xl:max-w-none">
       <div className="overflow-hidden rounded-lg">
         <Image
           src={template.src}
