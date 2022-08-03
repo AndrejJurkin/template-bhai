@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.edushare-logo{
+  margin: 10px;
+  padding: 10px;
+}
+.navbar-desktop{
+  display: flex;
+  justify-content: center;
+}
+.navbar-desktop a{
+  text-decoration: none;
+}
+/* .main-nav-list{
+    display: grid;
+} */
+.navbar-desktop-li{
+  padding-left: 20px;
+  list-style-type: none;
+  margin-top: -50px;
+  color: #030303;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+.sign-in-button{
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background-color: #E8F1FF;
+  color: #2378FF;
+  padding: 13px;
+  padding-right: 25px;
+  padding-left: 25px;
+  outline: none;
+  border-radius: 12px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  border: 0;
+  cursor: pointer;
+}
+
+.sign-in-button:hover{
+  background-color: #edf5fe;
+}
+/* SECTION 1 */
+.section-1-container{
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+.section-1-container img{
+  position: relative;
+  right: 40px;
+}
+.section-1-container h1{
+  font-size: 60px;
+  font-family: Inter;
+  font-weight: bold;
+  position: relative;
+  left: 80px;
+  top: 40px;
+  width: 521px;
+}
+.section-1-paragraph{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #606176;
+  margin-top: 25px;
+}
+.section-1-paragraph a{
+  color: #2076FF;
+}
+.getstarted-btn{
+  background: #F77E53;
+border-radius: 16px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: -0.01em;
+color: #FEF4F1;
+padding: 19px;
+padding-left: 25px;
+padding-right: 25px;
+cursor: pointer;
+outline: none;
+border: 0;
+}
+.getstarted-btn:hover{
+  background-color: #f7865d;
+}
+
+/* SECTION 2 */
+.section-2{
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.section-2 h1{
+padding-left: 70px;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 62px;
+line-height: 75px;
+color: #101131;
+width: 251px;
+}
+.section-2 p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #606176;
+  margin-top: 20px;
+}
+.universities-imgs{
+  position: absolute;
+  right: 120px;
+  padding-top: 30px;
+}
+.universities-imgs img{
+  padding-left: 50px;
+}
+.section-3{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.section-3 img{
+  padding-right: 140px;
+}
+.section-3 h1{
+  width: 431px;
+  padding-left: 80px;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 56px;
+
+/* or 127% */
+letter-spacing: -0.01em;
+color: #101131;
+}
+@media screen and (min-width:1200px) and (max-width:1300px) {
+  .universities-imgs{
+    position: absolute;
+    right: 30px;
+    padding-top: 30px;
+  }
+  .section-1-container img{
+    width: 550px;
+  }
+}
+@media screen and (min-width:800px) and (max-width:1199px) {
+  .section-1-container img{
+    width: 455px;
+  }
+  .universities-imgs{
+    position: static;
+    top: 20px;
+    /* padding-top: 200px; */
+  }
+  .universities-imgs img{
+    padding-left: 50px;
+  }
+  .section-1-container img{
+    width: 550px;
+  }
+  .section-2{
+    display: grid;
+    place-items: center;
+    margin-bottom: 40px;
+  }
+}
