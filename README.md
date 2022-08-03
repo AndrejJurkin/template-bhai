@@ -1,7 +1,15 @@
 # Template Bhai
 
-Description: TBD
+Template Bhai is an OS initiative that allows beginner web developers create their first contributions to Open Source.
+Basically, we are collecting and maintaining simple html/css/tailwindcss templates.
 
+Create your own or help maintaining the existing templates. We can get everyone involved!
+
+## Join Discord
+If you are interested in getting started join our Discord community where we'll help you get involved 
+https://discord.gg/5G9ZXft2SV
+
+## Contents
 - [Important](#important)
 - [Getting Started](#getting-started)
 - [Creating New Templates](#creating-new-templates)
