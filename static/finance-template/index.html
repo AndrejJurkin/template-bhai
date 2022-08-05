@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-Dm-sans bg-black text-white">
+    <header
+      class="fixed inset-x-0 top-0 z-20 bg-black px-4 pt-4 pb-2 lg:px-10 lg:py-5"
+    >
+      <div class="flex flex-row items-center justify-between">
+        <img src="/assets/svg-icons/logo.svg" alt="logo" />
+        <nav class="hidden space-x-9 sm:block lg:text-xl">
+          <a href="#">Home</a>
+          <a href="#">Product</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+        </nav>
+        <!-- <hr class="w-52 hidden lg:block " /> -->
+        <button
+          class="hidden rounded-md bg-gray-700 px-3 py-2 text-xs shadow-md md:block lg:text-base"
+        >
+          Get Started
+        </button>
+        <img
+          id="menu-btn"
+          src="/assets/svg-icons/hamburger-icon.svg"
+          class="h-8 w-8 sm:hidden"
+          alt="hamburger-menu"
+        />
+      </div>
+    </header>
+
+    <main class="mt-24 md:mt-36 lg:mt-48">
+      <section>
+        <div
+          class="flex flex-row px-4 md:px-10 lg:mx-auto lg:max-w-7xl lg:px-16"
+        >
+          <div class="space-y-7">
+            <p class="text-3xl md:text-6xl lg:text-6xl">
+              The Spending <br />
+              solution your team <br />
+              deserves.
+            </p>
+            <p class="text-dim text-xs">
+              Cardy saves you time and money on expenses,<br />
+              invoices, reimbursements and so much more. Start your free trial.
+            </p>
+            <div>
+              <div class="flex w-fit flex-row items-center">
+                <label class="sr-only" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="placeholder:text-tiny h-10 rounded-l-2xl pl-2 text-black outline-none sm:pl-3 sm:pr-2"
+                  placeholder="Your Company Email"
+                  id="email"
+                />
+                <button
+                  class="bg-button-color h-10 rounded-r-2xl px-3 text-center text-xs sm:px-7 sm:text-xs"
+                >
+                  Try it for free
+                </button>
+              </div>
+              <div class="mt-2 flex flex-row items-center">
+                <img src="/assets/svg-icons/sign-up.svg" alt="sign-up icon" />
+                <p class="text-tiny">Sign up in minutes</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="/assets/images/credit-card.png"
+            class="hidden h-72 w-3/5 lg:block"
+            alt="credit card"
+          />
+        </div>
+        <div class="mt-12 px-4 sm:px-10">
+          <hr class="text-white" />
+          <div class="flex flex-row items-center pt-6">
+            <p class="text-tiny md:text-xs lg:text-base">
+              Trusted by hundreds <br />
+              of companies
+            </p>
+            <div class="flex flex-grow flex-row justify-around">
+              <img
+                src="/assets/svg-icons/spotify-logo.svg"
+                class="h-8 w-10 md:h-12 md:w-16 lg:h-12 lg:w-32"
+                alt="spotify-logo"
+              />
+              <img
+                src="/assets/svg-icons/dropbox-logo.svg"
+                class="h-8 w-10 md:h-12 md:w-16 lg:h-12 lg:w-32"
+                alt="dropbox-logo"
+              />
+              <img
+                src="/assets/svg-icons/behance-logo.svg"
+                class="h-8 w-10 md:h-12 md:w-16 lg:h-12 lg:w-32"
+                alt="behance-logo"
+              />
+              <img
+                src="/assets/svg-icons/amazon-logo.svg"
+                class="h-8 w-10 md:h-12 md:w-16 lg:h-12 lg:w-32"
+                alt="amazon-logo"
+              />
+            </div>
+            <div
+              class="mr-12 hidden h-12 border-white sm:border-r-2 lg:block"
+            ></div>
+            <img
+              src="/assets/svg-icons/arrowdown.svg"
+              class="hidden lg:block"
+              alt="arrowdown"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mx-auto w-fit px-10 pt-24 lg:max-w-6xl">
+          <h2 class="text-center text-base sm:text-2xl">
+            Instantly process verified payroll <br />
+            data with your application.
+          </h2>
+          <div
+            class="flex flex-row flex-wrap justify-center gap-y-5 gap-x-5 pt-12"
+          >
+            <div class="bg-background w-fit rounded-lg py-8 px-14 text-center">
+              <div class="mx-auto w-32 space-y-4">
+                <img
+                  src="/assets/svg-icons/icon1.svg"
+                  class="mx-auto"
+                  alt="increase-conversion"
+                />
+                <p>increase conversion</p>
+                <p class="text-dim text-xs">
+                  No more conversions killed by long.
+                </p>
+              </div>
+            </div>
+            <div class="bg-background w-fit rounded-lg py-8 px-14 text-center">
+              <div class="mx-auto w-32 space-y-4">
+                <img
+                  src="/assets/svg-icons/icon2.svg"
+                  class="mx-auto"
+                  alt="increase-conversion"
+                />
+                <p>Expand The Funnel</p>
+                <p class="text-dim text-xs">
+                  Millions of people with thin credit files.
+                </p>
+              </div>
+            </div>
+            <div class="bg-background w-fit rounded-lg py-8 px-14 text-center">
+              <div class="mx-auto w-32 space-y-4">
+                <img
+                  src="/assets/svg-icons/icon3.svg"
+                  class="mx-auto"
+                  alt="increase-conversion"
+                />
+                <p>Protect Your Users</p>
+                <p class="text-dim text-xs">
+                  Our users can protect their privacy.
+                </p>
+              </div>
+            </div>
+            <div class="bg-background w-fit rounded-lg py-8 px-14 text-center">
+              <div class="mx-auto w-32 space-y-4">
+                <img
+                  src="/assets/svg-icons/icon4.svg"
+                  class="mx-auto"
+                  alt="increase-conversion"
+                />
+                <p>Own the Experience</p>
+                <p class="text-dim text-xs">
+                  Wage gives you full control over your UX.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="flex flex-row flex-wrap justify-around gap-y-3 px-10 pt-24 sm:px-10 lg:mx-auto lg:max-w-6xl"
+        >
+          <img
+            src="/assets/images/finance-card1.png"
+            class="h-1/2 w-fit sm:h-fit sm:w-2/5"
+            alt="finance-card"
+          />
+          <div class="my-auto w-full space-y-5 sm:w-2/5">
+            <p class="text-3xl sm:text-4xl">
+              Get your time back with Cardy Bills
+            </p>
+            <p class="text-dim text-xs">
+              Tracking and paying invoices manually takes too much time and
+              effort. Let our accounts payable software simplify the process for
+              you.
+            </p>
+            <button class="bg-button-color rounded-lg px-4 py-2">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="flex flex-row flex-wrap-reverse justify-around gap-y-3 px-10 pt-24 sm:px-10 lg:mx-auto lg:max-w-6xl"
+        >
+          <div class="my-auto w-full space-y-5 sm:w-2/5">
+            <p class="text-3xl sm:text-4xl">
+              Stay in control of payments with multi-level approvals
+            </p>
+            <p class="text-dim text-xs">
+              Create a review and approval process for bills of any size. With
+              multi-level approvals, Cardy can support the largest organizations
+              with 1000s of employees.
+            </p>
+            <button class="bg-button-color rounded-lg px-4 py-2">
+              Learn More
+            </button>
+          </div>
+          <img
+            src="/assets/images/finance-card2.png"
+            class="h-1/2 w-fit sm:h-fit sm:w-2/5"
+            alt="finance-card"
+          />
+        </div>
+      </section>
+      <section>
+        <div class="mx-auto w-fit px-10 pt-24 lg:max-w-6xl">
+          <p class="text-center text-xl sm:text-4xl">
+            Don't just take our word for it...
+          </p>
+          <div
+            class="flex flex-row flex-wrap justify-center gap-x-5 gap-y-9 pt-8"
+          >
+            <img
+              src="/assets/images/videocard1.png"
+              class="w-72"
+              alt="videocard"
+            />
+            <img
+              src="/assets/images/videocard2.png"
+              class="w-72"
+              alt="videocard"
+            />
+            <img
+              src="/assets/images/videocard3.png"
+              class="w-72"
+              alt="videocard"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="bg-background mt-9 flex w-fit flex-row items-center justify-start rounded-lg py-9 px-4 sm:justify-around sm:px-10 lg:mx-auto lg:max-w-6xl"
+        >
+          <div class="w-fit space-y-4 md:w-3/4 lg:w-1/2">
+            <p class="text-2xl">Get started with Cardy</p>
+            <p class="text-dim w-3/4 text-xs">
+              Join 20,000+ customers already using Cardy to stay on top of
+              company spending. Start your free trial.
+            </p>
+            <div>
+              <div class="flex w-fit flex-row items-center">
+                <label class="sr-only" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="placeholder:text-tiny h-10 rounded-l-2xl pl-2 text-black outline-none sm:pl-3 sm:pr-2"
+                  placeholder="Your Company Email"
+                  id="email"
+                />
+                <button
+                  class="bg-button-color h-10 rounded-r-2xl px-3 text-center text-xs sm:px-7 sm:text-xs"
+                >
+                  Try it for free
+                </button>
+              </div>
+              <div class="mt-2 flex flex-row items-center">
+                <img src="/assets/svg-icons/sign-up.svg" alt="sign-up icon" />
+                <p class="text-tiny">Sign up in minutes</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="/assets/images/illustration.png"
+            class="hidden h-1/2 w-52 sm:block"
+            alt="illustration"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="mt-6 pl-5 sm:mt-48 sm:pl-14 lg:max-w-full">
+      <div class="flex flex-col-reverse justify-between sm:flex-row">
+        <div class="mt-4 w-1/4 sm:mt-0">
+          <img src="/assets/svg-icons/logo.svg" alt="logo" />
+          <p class="text-dim pt-2 text-xs sm:pt-0">info@pleo.io</p>
+          <p class="text-dim text-xs">support@pleo.io</p>
+        </div>
+        <div class="flex w-3/4 flex-col justify-evenly gap-y-4 sm:flex-row">
+          <div>
+            <p class="text-xl font-bold uppercase">Product</p>
+            <div class="text-dim text-base lg:text-xs">
+              <p>Features</p>
+              <p>Why Cardy</p>
+              <p>FAQ</p>
+              <p>Pricing</p>
+              <p>Security</p>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-xl font-bold uppercase">resources</p>
+            <div class="text-dim text-base lg:text-xs">
+              <p>Blog</p>
+              <p>Help Centers</p>
+              <p>Partners</p>
+              <p>Customers</p>
+              <p>Developers</p>
+            </div>
+          </div>
+
+          <div>
+            <p class="text-xl font-bold uppercase">company</p>
+            <div class="text-dim text-base lg:text-xs">
+              <p>About us</p>
+              <p>Careers</p>
+              <p>Press</p>
+              <p>Legal</p>
+              <p>Referrals</p>
+            </div>
+          </div>
+          <div>
+            <p class="text-xl font-bold uppercase">Top partners</p>
+            <div class="text-dim text-base lg:text-xs">
+              <p>Amazon Aws</p>
+              <p>Notion</p>
+              <p>Slack</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-tiny text-dim mt-14 flex flex-row justify-between pb-3 sm:text-xs"
+      >
+        <p>Cookie policy</p>
+        <p>
+          ©<span id="copyright-year"></span> Webdesigns.io. All rights reserved.
+        </p>
+        <div class="flex gap-x-2 pr-8">
+          <p>Terms</p>
+          <p>Privacy</p>
+        </div>
+      </div>
+    </footer>
+    <aside>
+      <div
+        id="sidebar"
+        class="duration-3000 bg-background fixed top-0 right-0 z-20 h-screen w-screen translate-x-full overflow-y-hidden overscroll-y-none py-8 px-4 transition ease-in-out"
+      >
+        <div class="flex flex-row items-center justify-between px-3">
+          <img src="/assets/svg-icons/logo.svg" alt="Logo" />
+          <img
+            id="close-sideBar"
+            class="h-7 w-7"
+            src="/assets/svg-icons/cancel-icon.svg"
+          />
+        </div>
+        <div class="mt-16 flex flex-col space-y-6 px-3 text-xl">
+          <a href="#" class="border-b-2 border-white">Home</a>
+          <a href="#" class="border-b-2 border-white">Product</a>
+          <a href="#" class="border-b-2 border-white">Pricing</a>
+          <a href="#" class="border-b-2 border-white">About</a>
+        </div>
+      </div>
+    </aside>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

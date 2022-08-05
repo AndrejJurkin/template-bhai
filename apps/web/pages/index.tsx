@@ -1,13 +1,59 @@
-import Link from "next/link";
-import { Button } from "ui";
+import Head from "next/head";
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import StatSection from "../components/StatSection";
+import TemplatesSection from "../components/TemplatesSection";
+import Contributors from "../components/Contributors";
+import Footer from "../components/Footer";
+import getAllTemplates, { Template } from "../utils/getAllTemplates";
+import {
+  getStats,
+  getContributors,
+  Stats,
+  Contributor,
+} from "../utils/getStatsAndContributors";
 
-export default function Web() {
+interface Props {
+  stats: Stats;
+  contributors: Contributor[];
+  templates: Template[];
+}
+
+export default function Web({ stats, contributors, templates }: Props) {
   return (
-    <div>
-      <h1 className="text-2xl">Hello World!</h1>
-      <Link href="/templates">
-        <span className="cursor-pointer text-7xl"> - Templates</span>
-      </Link>
+    <div className="font-inter text-white">
+      <Head>
+        <title>Template Bhai</title>
+      </Head>
+
+      <Header />
+
+      <main>
+        <HeroSection />
+        <div className="bg-zinc-900">
+          <StatSection stats={stats} />
+          <TemplatesSection templates={templates} />
+          <Contributors contributors={contributors} />
+        </div>
+      </main>
+
+      <Footer />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const [stats, contributors, templates] = await Promise.all([
+    getStats(),
+    getContributors(),
+    getAllTemplates(),
+  ]);
+
+  return {
+    props: {
+      stats,
+      contributors,
+      templates,
+    },
+  };
 }
