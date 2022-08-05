@@ -1,5 +1,11 @@
-import templateData from './template-data.json';
+import templatesData from "./template-data.json";
+
+export interface Template {
+  name: string;
+  link: string;
+  src: string;
+}
 
 export default async function getAllTemplates() {
-    return templateData;
+  return templatesData;
 }
