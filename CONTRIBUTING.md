@@ -4,12 +4,11 @@ Thank you for investing your time in contributing to our project! Any contributi
 
 In this guide, you will get an overview on how to contribute, open issues, open a PR, review and merge it.
 
-Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
-
 
 ## New contributor guide
 
 To get an overview of the project, read the [README](README.md). The README contains everything you need to get yourself started with your contributions to our Open Source Project.
+
 
 ## Getting started
 
@@ -28,6 +27,7 @@ After you have solved an issue, open a Pull Request for review.
 
 For any changes you make, be it solving an existing / new Issue, or contributing a new template, make sure you:
 - Fork the repository, if not already done.
+- Ensure the base branch of your repository is in sync with that of the OS project.
 - Create a new branch in your forked repository, specifically for the task you are doing.
 - Clone the newly created branch from your repository to your local enviroment, perform the initial setup in the [README](README.md) and start working on your change.
 
