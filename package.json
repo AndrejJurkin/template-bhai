@@ -28,6 +28,8 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "fs-extra": "^10.1.0"
+  },
   "packageManager": "yarn@1.22.5"
 }
