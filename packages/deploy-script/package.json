@@ -1,0 +1,12 @@
+{
+  "name": "deploy-script",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A simple script to deploy projects",
+  "main": "index.js",
+  "author": "Subho",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^10.1.0"
+  }
+}
