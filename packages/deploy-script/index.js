@@ -13,18 +13,7 @@ export async function deployScript() {
     });
   });
 
-  // figure out deployable templates
-  const templatesData = await fs.readJSON(
-    path.join("apps/web/utils/template-data.json")
-  );
-
-  const templatesPath = templatesData.map((data) => data.link.slice(11));
-
-  const filesInStatic = await fs.readdir(path.join("static"));
-
-  const deployableTemplates = filesInStatic.filter((filename) =>
-    templatesPath.includes(filename.toLowerCase())
-  );
+  const deployableTemplates = await fs.readdir(path.join("static"));
 
   // copy <template-name>/dist to next public
   deployableTemplates.forEach(async (template) => {
