@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function NavLinks() {
+export default function MainNavLinks() {
   return (
     <>
       <Link href="/templates">
