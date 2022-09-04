@@ -16,24 +16,26 @@ export default function TemplateList({
   templatesData,
   handleFavoriteTemplates,
 }: Props) {
+  const maxTemplatesPerPage: number = 6;
+
   return (
     <div className="mt-8 flex w-full flex-wrap justify-between gap-2 gap-y-4 md:gap-y-7 md:px-8 md:py-2">
-      {favoritesData.length === templatesData.length &&
-        templatesData.map((template, index) => {
-          const isFavorite = favoritesData.filter(
-            (currTemplate) => currTemplate["template-name"] === template.name
-          )[0].favorite;
+      {templatesData.map((template, index) => {
+        const isFavorite = favoritesData.filter(
+          (currTemplate) => currTemplate["template-name"] === template.name
+        )[0]?.favorite;
 
-          return (
-            <TemplateCard
-              template={template}
-              isFavorite={isFavorite}
-              handleFavoriteTemplates={handleFavoriteTemplates}
-              key={index}
-            />
-          );
-        })}
-      <PageNavigation />
+        return (
+          <TemplateCard
+            template={template}
+            isFavorite={isFavorite}
+            handleFavoriteTemplates={handleFavoriteTemplates}
+            key={index}
+          />
+        );
+      })}
+
+      {templatesData.length > maxTemplatesPerPage && <PageNavigation />}
     </div>
   );
 }

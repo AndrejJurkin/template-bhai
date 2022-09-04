@@ -51,7 +51,10 @@ export default function Templates({ templatesData }: TemplatesProps) {
   useEffect(() => {
     let favData;
 
-    if (window.localStorage.getItem("favorites")) {
+    if (
+      window.localStorage.getItem("favorites") &&
+      window.localStorage.getItem("favorites")?.length === templatesData.length
+    ) {
       favData = JSON.parse(window.localStorage.getItem("favorites") || "");
     } else {
       favData = templatesData.map((template) => ({
