@@ -26,7 +26,7 @@ export default function Filters() {
   ];
 
   return (
-    <section className="my-2 flex flex-col gap-y-2 lg:bg-zinc-900">
+    <section className="my-2 flex flex-col gap-y-8">
       {filters.map((filter, index) => (
         <FilterList
           title={filter.title}

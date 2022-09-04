@@ -1,7 +1,8 @@
 import TemplateCard from "../../components/Templates/TemplateCard";
+import PageNavigation from "./PageNavigation";
 
 interface Props {
-  favoriteList: { "template-name": string; favorite: boolean }[];
+  favoritesData: { "template-name": string; favorite: boolean }[];
   templatesData: {
     name: string;
     link: string;
@@ -11,15 +12,15 @@ interface Props {
 }
 
 export default function TemplateList({
-  favoriteList,
+  favoritesData,
   templatesData,
   handleFavoriteTemplates,
 }: Props) {
   return (
-    <div className="mt-8 flex w-full flex-wrap justify-between gap-2 gap-y-7 px-8 md:gap-y-24 md:py-2">
-      {favoriteList.length === templatesData.length &&
+    <div className="mt-8 flex w-full flex-wrap justify-between gap-2 gap-y-4 md:gap-y-7 md:px-8 md:py-2">
+      {favoritesData.length === templatesData.length &&
         templatesData.map((template, index) => {
-          const isFavorite = favoriteList.filter(
+          const isFavorite = favoritesData.filter(
             (currTemplate) => currTemplate["template-name"] === template.name
           )[0].favorite;
 
@@ -32,6 +33,7 @@ export default function TemplateList({
             />
           );
         })}
+      <PageNavigation />
     </div>
   );
 }

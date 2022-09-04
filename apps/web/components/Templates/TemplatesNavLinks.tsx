@@ -13,9 +13,8 @@ export default function NavLinks() {
       <div className="md:hidden">
         <Favorites />
         {/* Uncomment this section after we have sufficient templates */}
-        {/*
-         */}
-        <Filters />
+
+        {/* <Filters /> */}
       </div>
     </>
   );

@@ -9,6 +9,7 @@ import Footer from "../../components/Footer";
 import Intro from "../../components/Templates/Intro";
 import TemplateList from "../../components/Templates/TemplateList";
 import Sidebar from "../../components/Templates/Sidebar";
+import FavoritesContext from "../../context/FavoritesContext";
 
 interface TemplatesProps {
   templatesData: {
@@ -19,14 +20,17 @@ interface TemplatesProps {
 }
 
 export default function Templates({ templatesData }: TemplatesProps) {
-  const [favoriteList, setFavoriteList] = useState([
+  const [showFavorites, setShowFavorites] = useState(false);
+  const [favoritesData, setFavoritesData] = useState([
     {
       "template-name": "",
       favorite: false,
     },
   ]);
 
-  function toggleFavorite(templateName: string) {
+  const toggleFavoriteFilter = () => setShowFavorites((prevVal) => !prevVal);
+
+  function toggleFavoriteTemplate(templateName: string) {
     const favData = JSON.parse(window.localStorage.getItem("favorites") || "");
 
     const targetTemplate = favData.filter(
@@ -41,7 +45,7 @@ export default function Templates({ templatesData }: TemplatesProps) {
 
     const newFavData = [targetTemplate, ...otherTemplates];
     window.localStorage.setItem("favorites", JSON.stringify(newFavData));
-    setFavoriteList(newFavData);
+    setFavoritesData(newFavData);
   }
 
   useEffect(() => {
@@ -58,32 +62,34 @@ export default function Templates({ templatesData }: TemplatesProps) {
       window.localStorage.setItem("favorites", JSON.stringify(favData));
     }
 
-    setFavoriteList(favData);
+    setFavoritesData(favData);
   }, []);
 
   return (
-    <div className="font-inter flex min-h-screen flex-col justify-between bg-zinc-900 text-white">
-      <Head>
-        <title>Templates</title>
-      </Head>
+    <FavoritesContext.Provider value={showFavorites}>
+      <div className="font-inter flex min-h-screen flex-col justify-between bg-zinc-900 text-white">
+        <Head>
+          <title>Templates</title>
+        </Head>
 
-      <Header />
+        <Header />
 
-      <main className="container mx-auto my-20 mb-32 flex h-full flex-col items-center justify-center text-center">
-        <Intro />
+        <main className="container my-20 mb-32 flex h-full flex-col items-center justify-center text-center">
+          <Intro />
 
-        <section className="mt-10 flex justify-center">
-          <Sidebar />
-          <TemplateList
-            favoriteList={favoriteList}
-            templatesData={templatesData}
-            handleFavoriteTemplates={toggleFavorite}
-          />
-        </section>
-      </main>
+          <section className="mt-10 flex justify-center">
+            <Sidebar handleShowFavorites={toggleFavoriteFilter} />
+            <TemplateList
+              favoritesData={favoritesData}
+              templatesData={templatesData}
+              handleFavoriteTemplates={toggleFavoriteTemplate}
+            />
+          </section>
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </FavoritesContext.Provider>
   );
 }
 

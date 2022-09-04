@@ -9,9 +9,10 @@ export default function Header() {
   return (
     <header className="h-[88px] md:bg-zinc-800">
       <div className="container py-4">
+        {/* Change height of the div below to `h-96` after filters are enabled */}
         <div
-          className={`relative z-10 -mx-4 overflow-hidden rounded-lg bg-zinc-700/50 backdrop-blur-lg transition-[height] duration-300 md:flex md:items-center md:justify-between md:bg-transparent md:p-4 lg:overflow-hidden ${
-            menuOpen ? "h-auto max-h-96 overflow-y-auto" : "h-14"
+          className={`relative z-10 -mx-4 overflow-hidden rounded-lg bg-zinc-700/50 backdrop-blur-lg transition-all duration-300 md:flex md:items-center md:justify-between md:bg-transparent md:p-4 lg:overflow-hidden ${
+            menuOpen ? "h-[21rem] overflow-y-auto" : "h-14"
           }`}
         >
           <div className="sticky top-0 z-10 flex items-center justify-between bg-zinc-700 p-4 md:bg-transparent md:p-0">
