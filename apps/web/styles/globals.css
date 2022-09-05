@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  body {
+    @apply h-full;
+  }
+
+  .template-action-button {
+    @apply absolute left-0 right-0 -z-20 w-full rounded-sm p-2 text-xs font-bold uppercase transition-transform duration-300 group-hover:static 
+    group-hover:z-0 group-hover:translate-x-0 md:group-hover:translate-y-0 lg:text-sm;
+  }
+}
