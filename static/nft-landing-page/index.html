@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>NFT Landing Page</title>
+  </head>
+  <body>
+    <main>
+
+      <header id="main-header" class="min-h-screen bg-gradient-to-r from-lightYellowGrad via-lightYellowGrad to-lightRoseGrad">
+        <div id="header-container" class="pb-24 container mx-auto flex flex-col gap-16">
+          <nav id="header" class="py-8 flex items-center justify-between text-black">
+            <div id="website-logo" class="flex items-center">
+              <p id="website-logo" class="text-4xl font-bold">Artistry</p>
+            </div>
+            <div class="flex items-center justify-between gap-12">
+              <div id="search-bar" class="relative flex items-center justify-center text-black">
+                <div class="absolute left-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<circle cx="11" cy="11" r="9" fill="none"></circle><line x1="17.5" y1="17.5" x2="22" y2="22"></line></svg>
+                </div>
+                <input id="search-bar-input" class="pl-12 pr-2 py-4 text-lg border-[1px] border-black bg-transparent rounded-lg caret-pink focus:border-pink placeholder:text-black" style="outline: none" type="text" placeholder="Search collection, item or user">
+              </div>
+              <div class="flex items-center justify-between gap-16 text-xl">
+                <a class="hover:underline" href="#">Explore</a>
+                <a class="hover:underline" href="#">Marketplace</a>
+                <a class="hover:underline" href="#">Community</a>
+              </div>
+              <div class="flex items-center justify-between gap-12">
+                <a id="user-img" class="p-4 text-white font-bold rounded-full bg-black duration-[0.3s] hover:bg-pink" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<circle cx="12" cy="6" r="4"></circle><path d="M17.67,22a2,2,0,0,0,1.92-2.56A7.8,7.8,0,0,0,12,14a7.8,7.8,0,0,0-7.59,5.44A2,2,0,0,0,6.34,22Z"></path></svg>
+                </a>
+                <button id="connect-wallet" class="px-8 py-4 bg-black text-white text-xl font-bold rounded-lg duration-[0.3s] hover:bg-pink">Connect Wallet</button>
+              </div>
+            </div>
+          </nav>
+
+          <div id="hero-section" class="flex items-center justify-between gap-20">
+            <div class="flex items-start justify-between flex-col">
+              <div class="flex items-start justify-between flex-col gap-12">
+                <h1 class="text-8xl text-black font-extrabold">Explore <br> Legendary Art &#128293; and NFT's &#128525;</h1>
+                <h2 class="text-2xl">Discover, collect and sell extraordinary NFTs <br> through out awesome platform. Express yourself by <br>your artwork through us.</h2>
+              </div>
+              <button class="px-12 py-[20px] my-16 bg-pink text-2xl text-white font-bold rounded-xl duration-[0.2s] hover:shadow-rose-400/60 hover:shadow-xl">Create NFT</button>
+              <div class="flex items-center justify-between gap-20">
+                <div class="flex flex-col items-start justify-center gap-2">
+                  <p class="text-6xl font-bold">27K+</p>
+                  <p class="text-2xl">Artwork</p>
+                </div>
+                <div class="flex flex-col items-start justify-center gap-2">
+                  <p class="text-6xl font-bold">19K+</p>
+                  <p class="text-2xl">Auction</p>
+                </div>
+                <div class="flex flex-col items-start justify-center gap-2">
+                  <p class="text-6xl font-bold">10K+</p>
+                  <p class="text-2xl">Artists</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex items-center justify-center rounded-2xl bg-white shadow-2xl">
+              <div class="p-8 flex gap-2 flex-col">
+                <div class="pt-2 flex gap-4 items-center">
+                  <img class="w-[50px] border-2 border-pink rounded-full" src="./public/img/image-avatar.png" alt="">
+                  <div class="flex text-2xl font-semibold">
+                    <p class="text-lightGray">Created by &nbsp;</p>
+                    <a class="text-pink" href="#">Zelfroster</a>
+                  </div>
+                </div>
+                <img class="rounded-xl w-[1000px] my-8" src="./public/img/main-eth-image.jpg" alt="eth image">
+                <div class="flex flex-col justify-between gap-2">
+                  <div class="flex flex-col justify-between gap-4">
+                    <a class="text-3xl font-semibold hover:text-cyan" href="#">Immiscible Wallpaper</a>
+                    <span class="w-full h-[1px] bg-black/20"></span>
+                    <div class="flex justify-between text-lg items-center">
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Current Bid</p>
+                        <p class="font-semibold text-2xl">1.041 ETH</p>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Remaining Time</p>
+                        <p class="font-semibold text-2xl">3 days left</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="Random-art" class="min-h-screen bg-white flex items-center">
+        <div class="container mx-auto flex items-center justify-between gap-24 p-8">
+          <img class="w-[800px] rounded-[25px] basis-1/2" src="./public/img/tiles-paint.jpg" alt="">
+          <div class="flex flex-col items-center basis-1/3">
+            <div class="flex flex-col justify-between gap-4">
+              <a class="text-6xl font-semibold hover:text-cyan" href="#">Ebru Art Marbling Color Background</a>
+              <div class="flex mt-2 text-2xl font-semibold">
+                <p class="text-lightGray">Created by &nbsp;</p>
+                <a class="text-pink" href="#">Zelfroster</a>
+              </div>
+              <span class="w-full h-[1px] mt-8 bg-black/20"></span>
+              <div class="flex justify-between text-lg items-center">
+                <div class="flex flex-col justify-center">
+                  <p class="font-semibold text-lg text-black/50">Current Bid</p>
+                  <p class="font-semibold text-2xl">1.041 ETH</p>
+                </div>
+                <div class="flex flex-col justify-center">
+                  <p class="font-semibold text-lg text-black/50">Remaining Time</p>
+                  <p class="font-semibold text-2xl">3 days left</p>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <button class="px-12 py-[20px] my-12 bg-pink text-2xl text-white font-bold rounded-xl duration-[0.2s] hover:shadow-xl hover:shadow-rose-400/60">Place a Bid</button>
+                <button class="px-12 py-[20px] my-12 bg-lightPink text-2xl text-pink font-bold rounded-xl duration-[0.2s] hover:shadow-xl">View Artwork</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="art-gallery" class="min-h-screen bg-yellow-100/20 flex items-center">
+        <div class="py-24 container mx-auto flex flex-col items-center justify-center gap-20">
+          <h2 class="text-6xl font-extrabold text-center">Our Most Popular <br> Collections</h2>
+          <div id="categories" class="flex items-center justify-between gap-12">
+            <button class="px-10 py-[20px] bg-lightPink text-2xl font-semibold text-pink rounded-lg">Trending</button>
+            <button class="px-10 py-[20px] bg-lightPink text-2xl font-semibold text-pink rounded-lg">Sports</button>
+            <button class="px-10 py-[20px] bg-lightPink text-2xl font-semibold text-pink rounded-lg">Music</button>
+            <button class="px-10 py-[20px] bg-[#FB4381] text-2xl font-semibold text-white rounded-lg">Arts</button>
+            <button class="px-10 py-[20px] bg-lightPink text-2xl font-semibold text-pink rounded-lg">Photography</button>
+            <button class="px-10 py-[20px] bg-lightPink text-2xl font-semibold text-pink rounded-lg">Virtual World</button>
+            <button class="px-10 py-[20px] bg-lightPink text-2xl font-semibold text-pink rounded-lg">All</button>
+          </div>
+          <div class="grid grid-cols-3 place-items-center gap-16">
+            <div class="flex items-center justify-center rounded-2xl bg-white hover:shadow-2xl duration-[0.4s]">
+              <div class="p-8 flex gap-2 flex-col">
+                <div class="pt-2 flex gap-4 items-center">
+                  <img class="w-[50px] border-2 border-pink rounded-full" src="./public/img/image-avatar.png" alt="">
+                  <div class="flex text-2xl font-semibold">
+                    <p class="text-lightGray">Created by &nbsp;</p>
+                    <a class="text-pink" href="#">Zelfroster</a>
+                  </div>
+                </div>
+                <img class="rounded-xl w-[1000px] my-8" src="./public/img/main-eth-image.jpg" alt="eth image">
+                <div class="flex flex-col justify-between gap-2">
+                  <div class="flex flex-col justify-between gap-4">
+                    <a class="text-3xl font-semibold hover:text-cyan" href="#">Immiscible Wallpaper</a>
+                    <span class="w-full h-[1px] bg-black/20"></span>
+                    <div class="flex justify-between text-lg items-center">
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Current Bid</p>
+                        <p class="font-semibold text-2xl">1.041 ETH</p>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Remaining Time</p>
+                        <p class="font-semibold text-2xl">3 days left</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center rounded-2xl bg-white shadow-2xl">
+              <div class="p-8 flex gap-2 flex-col">
+                <div class="pt-2 flex gap-4 items-center">
+                  <img class="w-[50px] border-2 border-pink rounded-full" src="./public/img/image-avatar.png" alt="">
+                  <div class="flex text-2xl font-semibold">
+                    <p class="text-lightGray">Created by &nbsp;</p>
+                    <a class="text-pink" href="#">Zelfroster</a>
+                  </div>
+                </div>
+                <img class="rounded-xl w-[1000px] my-8" src="./public/img/main-eth-image.jpg" alt="eth image">
+                <div class="flex flex-col justify-between gap-2">
+                  <div class="flex flex-col justify-between gap-4">
+                    <a class="text-3xl font-semibold hover:text-cyan" href="#">Immiscible Wallpaper</a>
+                    <span class="w-full h-[1px] bg-black/20"></span>
+                    <div class="flex justify-between text-lg items-center">
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Current Bid</p>
+                        <p class="font-semibold text-2xl">1.041 ETH</p>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Remaining Time</p>
+                        <p class="font-semibold text-2xl">3 days left</p>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <button class="px-8 py-4 bg-pink text-xl text-white font-semibold rounded-md">Place a Bid</button>
+                      <button class="px-8 py-4 bg-lightPink text-xl text-pink font-semibold rounded-md">View Artwork</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center rounded-2xl bg-white hover:shadow-2xl duration-[0.4s]">
+              <div class="p-8 flex gap-2 flex-col">
+                <div class="pt-2 flex gap-4 items-center">
+                  <img class="w-[50px] border-2 border-pink rounded-full" src="./public/img/image-avatar.png" alt="">
+                  <div class="flex text-2xl font-semibold">
+                    <p class="text-lightGray">Created by &nbsp;</p>
+                    <a class="text-pink" href="#">Zelfroster</a>
+                  </div>
+                </div>
+                <img class="rounded-xl w-[1000px] my-8" src="./public/img/main-eth-image.jpg" alt="eth image">
+                <div class="flex flex-col justify-between gap-2">
+                  <div class="flex flex-col justify-between gap-4">
+                    <a class="text-3xl font-semibold hover:text-cyan" href="#">Immiscible Wallpaper</a>
+                    <span class="w-full h-[1px] bg-black/20"></span>
+                    <div class="flex justify-between text-lg items-center">
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Current Bid</p>
+                        <p class="font-semibold text-2xl">1.041 ETH</p>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Remaining Time</p>
+                        <p class="font-semibold text-2xl">3 days left</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center rounded-2xl bg-white hover:shadow-2xl duration-[0.4s]">
+              <div class="p-8 flex gap-2 flex-col">
+                <div class="pt-2 flex gap-4 items-center">
+                  <img class="w-[50px] border-2 border-pink rounded-full" src="./public/img/image-avatar.png" alt="">
+                  <div class="flex text-2xl font-semibold">
+                    <p class="text-lightGray">Created by &nbsp;</p>
+                    <a class="text-pink" href="#">Zelfroster</a>
+                  </div>
+                </div>
+                <img class="rounded-xl w-[1000px] my-8" src="./public/img/main-eth-image.jpg" alt="eth image">
+                <div class="flex flex-col justify-between gap-2">
+                  <div class="flex flex-col justify-between gap-4">
+                    <a class="text-3xl font-semibold hover:text-cyan" href="#">Immiscible Wallpaper</a>
+                    <span class="w-full h-[1px] bg-black/20"></span>
+                    <div class="flex justify-between text-lg items-center">
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Current Bid</p>
+                        <p class="font-semibold text-2xl">1.041 ETH</p>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Remaining Time</p>
+                        <p class="font-semibold text-2xl">3 days left</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center rounded-2xl bg-white hover:shadow-2xl duration-[0.4s]">
+              <div class="p-8 flex gap-2 flex-col">
+                <div class="pt-2 flex gap-4 items-center">
+                  <img class="w-[50px] border-2 border-pink rounded-full" src="./public/img/image-avatar.png" alt="">
+                  <div class="flex text-2xl font-semibold">
+                    <p class="text-lightGray">Created by &nbsp;</p>
+                    <a class="text-pink" href="#">Zelfroster</a>
+                  </div>
+                </div>
+                <img class="rounded-xl w-[1000px] my-8" src="./public/img/main-eth-image.jpg" alt="eth image">
+                <div class="flex flex-col justify-between gap-2">
+                  <div class="flex flex-col justify-between gap-4">
+                    <a class="text-3xl font-semibold hover:text-cyan" href="#">Immiscible Wallpaper</a>
+                    <span class="w-full h-[1px] bg-black/20"></span>
+                    <div class="flex justify-between text-lg items-center">
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Current Bid</p>
+                        <p class="font-semibold text-2xl">1.041 ETH</p>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Remaining Time</p>
+                        <p class="font-semibold text-2xl">3 days left</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center rounded-2xl bg-white hover:shadow-2xl duration-[0.4s]">
+              <div class="p-8 flex gap-2 flex-col">
+                <div class="pt-2 flex gap-4 items-center">
+                  <img class="w-[50px] border-2 border-pink rounded-full" src="./public/img/image-avatar.png" alt="">
+                  <div class="flex text-2xl font-semibold">
+                    <p class="text-lightGray">Created by &nbsp;</p>
+                    <a class="text-pink" href="#">Zelfroster</a>
+                  </div>
+                </div>
+                <img class="rounded-xl w-[1000px] my-8" src="./public/img/main-eth-image.jpg" alt="eth image">
+                <div class="flex flex-col justify-between gap-2">
+                  <div class="flex flex-col justify-between gap-4">
+                    <a class="text-3xl font-semibold hover:text-cyan" href="#">Immiscible Wallpaper</a>
+                    <span class="w-full h-[1px] bg-black/20"></span>
+                    <div class="flex justify-between text-lg items-center">
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Current Bid</p>
+                        <p class="font-semibold text-2xl">1.041 ETH</p>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Remaining Time</p>
+                        <p class="font-semibold text-2xl">3 days left</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="px-10 py-[20px] bg-black text-2xl font-bold text-white rounded-lg duration-[0.1s] hover:bg-black/80">View More</button>
+        </div>
+      </section>
+
+      <section id="artist-gallery" class="min-h-screen bg-white flex items-center">
+        <div class="container mx-auto flex flex-col items-center gap-12">
+          <div class="w-full flex flex-col items-start gap-8">
+            <h2 class="text-6xl font-bold">Most Popular Artists</h2>
+            <div class="w-full flex items-center justify-between">
+              <p class="text-2xl text-lightGray">Find the best creators of the week, ranked creators, <br> filtered by creators popularity in artwork.</p>
+              <button class="px-10 py-[20px] bg-black text-2xl font-bold text-white rounded-lg duration-[0.1s] hover:bg-black/80">All Artists</button>
+            </div>
+          </div>
+          <div class="flex items-center justify-between gap-12">
+            <div class="w-[250px] flex flex-col items-center justify-center rounded-[25px] shadow-xl">
+              <div class="flex items-center justify-center relative">
+                <img class="rounded-[15px]" src="./public/img/main-eth-image.jpg" alt="">
+                <img class="w-20 absolute -bottom-8" src="./public/img/image-avatar.png" alt="">
+              </div>
+              <h3 class="text-2xl mt-12 font-semibold">Zelfroster</h3>
+              <p class="text-xl mb-6 text-lightGray">20,600+ items</p>
+              <button class="px-8 py-[8px] mb-6 bg-lightPink text-xl text-pink rounded-lg duration-[0.1s]">Followed</button>
+            </div>
+            <div class="w-[250px] flex flex-col items-center justify-center rounded-[25px] shadow-xl">
+              <div class="flex items-center justify-center relative">
+                <img class="rounded-[15px]" src="./public/img/main-eth-image.jpg" alt="">
+                <img class="w-20 absolute -bottom-8" src="./public/img/image-avatar.png" alt="">
+              </div>
+              <h3 class="text-2xl mt-12 font-semibold">Zelfroster</h3>
+              <p class="text-xl mb-6 text-lightGray">20,600+ items</p>
+              <button class="px-8 py-[8px] mb-6 bg-lightPink text-xl text-pink rounded-lg duration-[0.1s]">Followed</button>
+            </div>
+            <div class="w-[250px] flex flex-col items-center justify-center rounded-[25px] shadow-xl">
+              <div class="flex items-center justify-center relative">
+                <img class="rounded-[15px]" src="./public/img/main-eth-image.jpg" alt="">
+                <img class="w-20 absolute -bottom-8" src="./public/img/image-avatar.png" alt="">
+              </div>
+              <h3 class="text-2xl mt-12 font-semibold">Zelfroster</h3>
+              <p class="text-xl mb-6 text-lightGray">20,600+ items</p>
+              <button class="px-8 py-[8px] mb-6 bg-pink text-xl text-white rounded-lg duration-[0.1s]">Follow</button>
+            </div>
+            <div class="w-[250px] flex flex-col items-center justify-center rounded-[25px] shadow-xl">
+              <div class="flex items-center justify-center relative">
+                <img class="rounded-[15px]" src="./public/img/main-eth-image.jpg" alt="">
+                <img class="w-20 absolute -bottom-8" src="./public/img/image-avatar.png" alt="">
+              </div>
+              <h3 class="text-2xl mt-12 font-semibold">Zelfroster</h3>
+              <p class="text-xl mb-6 text-lightGray">20,600+ items</p>
+              <button class="px-8 py-[8px] mb-6 bg-lightPink text-xl text-pink rounded-lg duration-[0.1s]">Followed</button>
+            </div>
+            <div class="w-[250px] flex flex-col items-center justify-center rounded-[25px] shadow-xl">
+              <div class="flex items-center justify-center relative">
+                <img class="rounded-[15px]" src="./public/img/main-eth-image.jpg" alt="">
+                <img class="w-20 absolute -bottom-8" src="./public/img/image-avatar.png" alt="">
+              </div>
+              <h3 class="text-2xl mt-12 font-semibold">Zelfroster</h3>
+              <p class="text-xl mb-6 text-lightGray">20,600+ items</p>
+              <button class="px-8 py-[8px] mb-6 bg-lightPink text-xl text-pink rounded-lg duration-[0.1s]">Followed</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="call-to-action" class="min-h-[80vh] bg-gradient-to-r from-lightYellowGrad via-lightYellowGrad to-rose-500/90 flex items-center">
+        <div class="container mx-auto flex items-center justify-between">
+          <div class="flex flex-col items-start gap-16">
+            <h2 class="text-6xl font-bold">Don't forget to get <br> the latest updates</h2>
+            <div class="flex items-center justify-between gap-4">
+              <input class="pl-4 pr-10 py-[20px] bg-transparent rounded-xl border-2 border-black text-2xl caret-pink focus:border-pink placeholder:text-black placeholder:text-2xl" style="outline: none" type="email" placeholder="Enter email...">
+              <button class="px-12 py-[22px] bg-pink text-white text-2xl rounded-xl font-semibold duration-[0.2s] hover:shadow-rose-400/60 hover:shadow-xl">Subscribe</button>
+            </div>
+          </div>
+          <div class="flex items-center justify-between relative">
+            <div class="w-[500px] flex items-center justify-center rounded-2xl bg-white shadow-2xl -rotate-[15deg] translate-x-56">
+              <div class="p-8 flex gap-2 flex-col">
+                <div class="flex gap-4 items-center">
+                  <img class="w-[50px] border-2 border-pink rounded-full" src="./public/img/image-avatar.png" alt="">
+                  <div class="flex text-2xl font-semibold">
+                    <p class="text-lightGray">Created by &nbsp;</p>
+                    <a class="text-pink" href="#">Zelfroster</a>
+                  </div>
+                </div>
+                <img class="rounded-xl w-[1000px] mt-2 mb-8" src="./public/img/main-eth-image.jpg" alt="eth image">
+                <div class="flex flex-col justify-between gap-2">
+                  <div class="flex flex-col justify-between gap-4">
+                    <a class="text-3xl font-semibold hover:text-cyan" href="#">Immiscible Wallpaper</a>
+                    <span class="w-full h-[1px] bg-black/20"></span>
+                    <div class="flex justify-between text-lg items-center">
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Current Bid</p>
+                        <p class="font-semibold text-2xl">1.041 ETH</p>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Remaining Time</p>
+                        <p class="font-semibold text-2xl">3 days left</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-[500px] flex items-center justify-center rounded-2xl bg-white shadow-2xl z-10">
+              <div class="p-8 flex gap-2 flex-col">
+                <div class="flex gap-4 items-center">
+                  <img class="w-[50px] border-2 border-pink rounded-full" src="./public/img/image-avatar.png" alt="">
+                  <div class="flex text-2xl font-semibold">
+                    <p class="text-lightGray">Created by &nbsp;</p>
+                    <a class="text-pink" href="#">Zelfroster</a>
+                  </div>
+                </div>
+                <img class="rounded-xl w-[1000px] mt-2 mb-8" src="./public/img/main-eth-image.jpg" alt="eth image">
+                <div class="flex flex-col justify-between gap-2">
+                  <div class="flex flex-col justify-between gap-4">
+                    <a class="text-3xl font-semibold hover:text-cyan" href="#">Immiscible Wallpaper</a>
+                    <span class="w-full h-[1px] bg-black/20"></span>
+                    <div class="flex justify-between text-lg items-center">
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Current Bid</p>
+                        <p class="font-semibold text-2xl">1.041 ETH</p>
+                      </div>
+                      <div class="flex flex-col justify-center">
+                        <p class="font-semibold text-lg text-black/50">Remaining Time</p>
+                        <p class="font-semibold text-2xl">3 days left</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="website-footer" class="min-h-[60vh] bg-white flex items-center">
+        <div class="py-10 container mx-auto flex flex-col items-center justify-between gap-12">
+          <div class="w-full flex items-start justify-between">
+            <div class="flex flex-col items-start gap-8">
+              <h2 class="text-4xl font-bold">Artistry</h2>
+              <div class="flex items-center justify-between gap-2">
+                <p class="text-2xl font-semibold">Phone:</p>
+                <p class="text-2xl text-lightGray">(000) 123 456 789</p>
+              </div>
+              <div class="flex items-center justify-between gap-2">
+                <p class="text-2xl font-semibold">Email:</p>
+                <p class="text-2xl text-lightGray">youremail@gmail.com</p>
+              </div>
+              <div class="flex items-start justify-between gap-2">
+                <p class="text-2xl font-semibold">Address:</p>
+                <p class="text-2xl text-lightGray">102 Seddon Park, <br>Hamilton New Zealand</p>
+              </div>
+            </div>
+            <div class="flex items-start justify-between gap-12 basis-3/5">
+              <div class="flex flex-col items-start gap-8">
+                <h2 class="text-2xl font-bold">Marketplace</h2>
+                <div class="flex flex-col items-start gap-6">
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Explore</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Blog</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">How it works</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Jobs</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Help Center</p>
+                </div>
+              </div>
+              <div class="flex flex-col items-start gap-8">
+                <h2 class="text-2xl font-bold">My Account</h2>
+                <div class="flex flex-col items-start gap-6">
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Profile</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Favourite</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Watchlist</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">My Collections</p>
+                </div>
+              </div>
+              <div class="flex flex-col items-start gap-8">
+                <h2 class="text-2xl font-bold">Company</h2>
+                <div class="flex flex-col items-start gap-6">
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">About</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Careers</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Ventures</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Grants</p>
+                </div>
+              </div>
+              <div class="flex flex-col items-start gap-8">
+                <h2 class="text-2xl font-bold">Company</h2>
+                <div class="flex flex-col items-start gap-6">
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">About</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Careers</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Ventures</p>
+                  <p class="text-xl text-lightGray cursor-pointer hover:text-slate-800">Grants</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="w-full h-[2px] bg-yellow-200"></span>
+          <div class="flex flex-col items-center gap-4">
+            <p class="text-2xl font-bold">Follow us</p>
+            <div class="flex items-center justify-center gap-4">
+              <div class="bg-black p-2 rounded-full hover:bg-pink duration-[0.2s]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #ffffff;transform: ;msFilter:;"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+              </div>
+              <div class="bg-black p-2 rounded-full hover:bg-pink duration-[0.2s]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #ffffff;transform: ;msFilter:;"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+              </div>
+              <div class="bg-black p-2 rounded-full hover:bg-pink duration-[0.2s]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: #ffffff;transform: ;msFilter:;"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+              </div>
+            </div>
+            <p class="mt-4 text-2xl text-lightGray">Made with ❤️ by Zelfroster</p>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </body>
+</html>
